@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="23.136" height="23.372" viewBox="0 0 23.136 23.372">
+  <g id="mic-mute" transform="translate(-1128.233 -361.897)">
+    <g id="microphone" transform="translate(1056.922 362)">
+      <path id="Path_16" data-name="Path 16" d="M153.806,14.966a4.229,4.229,0,0,0,4.229-4.229V4.229a4.229,4.229,0,1,0-8.458,0v6.508A4.229,4.229,0,0,0,153.806,14.966Z" transform="translate(-71.287)" fill="#ff1a46"/>
+      <path id="Path_17" data-name="Path 17" d="M88.234,136.147v1.485h.743v2.511a6.457,6.457,0,1,1-12.914,0v-2.511H76.8v-1.485H74.577v4a7.953,7.953,0,0,0,7.2,7.907v3.139H77.3v1.485H87.74V151.19H83.262v-3.139a7.953,7.953,0,0,0,7.2-7.907v-4H88.234Z" transform="translate(0 -129.407)" fill="#ff1a46"/>
+    </g>
+    <path id="Path_75" data-name="Path 75" d="M-663.114,301.114l19.6,18.113" transform="translate(1793.113 62.55)" fill="none" stroke="#ff1a46" stroke-linecap="round" stroke-width="2.5"/>
+  </g>
+</svg>

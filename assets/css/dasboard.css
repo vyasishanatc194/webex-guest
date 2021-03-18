@@ -1,0 +1,527 @@
+.pending-white-card-section {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.pending-white-card-section .pending-white-card {
+  padding: 0;
+  margin: 0 0 20px 0;
+  position: relative;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.pending-white-card-section .pending-white-card .pending-white-card-inner {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.pending-white-card-section .pending-white-card .pending-white-card-inner .pending-white-card-header {
+  padding: 15px 15px;
+  margin: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.pending-white-card-section .pending-white-card .pending-white-card-inner .pending-white-card-header .pending-white-card-header-left {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: calc(100% - 85px);
+}
+
+.pending-white-card-section .pending-white-card .pending-white-card-inner .pending-white-card-header .pending-white-card-header-left h3 {
+  font-size: 20px;
+  line-height: 1.4;
+  color: #252631;
+  letter-spacing: 0.2px;
+  margin: 0 0 0 0;
+  display: block;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+}
+
+.pending-white-card-section .pending-white-card .pending-white-card-inner .pending-white-card-header .pending-white-card-header-right {
+  padding: 0;
+  margin: 0;
+  width: 85px;
+}
+
+.pending-white-card-section .pending-white-card .pending-white-card-inner .pending-white-card-header .pending-white-card-header-right .btn.btn-white {
+  min-width: 85px;
+}
+
+.pending-white-card-section .pending-white-card .pending-white-card-inner .pending-white-card-body {
+  padding: 5px 15px 15px 15px;
+  margin: 0;
+  position: relative;
+}
+
+.pending-white-card-section .pending-white-card .pending-white-card-inner .pending-white-card-body .number-view-pending-div .number-view-pending-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.pending-white-card-section .pending-white-card .pending-white-card-inner .pending-white-card-body .number-view-pending-div .number-view-pending-row .number-view-box {
+  padding: 0 10px 10px 0;
+  margin: 0 0 10px 0;
+  position: relative;
+  font-family: "Lato", sans-serif;
+  border-bottom: 1px dashed #e8ecf0;
+}
+
+.pending-white-card-section .pending-white-card .pending-white-card-inner .pending-white-card-body .number-view-pending-div .number-view-pending-row .number-view-box h5 {
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 400;
+  color: #252631;
+  letter-spacing: 0.2px;
+  display: block;
+  width: 100%;
+}
+
+.pending-white-card-section .pending-white-card .pending-white-card-inner .pending-white-card-body .number-view-pending-div .number-view-pending-row .number-view-box p {
+  font-size: 14px;
+  color: #98a9bc;
+  line-height: 1.4;
+  display: block;
+  margin: 0 0 5px 0;
+}
+
+.pending-white-card-section .pending-white-card .pending-white-card-inner .pending-white-card-body .number-view-pending-div .number-view-pending-row:last-child .number-view-box {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+
+.pending-white-card-section .pending-white-card .pending-white-card-inner .pending-white-card-body .progress-bar-div-root {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.pending-white-card-section .pending-white-card .pending-white-card-inner .pending-white-card-body .progress-bar-div-root .progress-bar-div-row {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.pending-white-card-section .pending-white-card .pending-white-card-inner .pending-white-card-body .progress-bar-div-root .progress-bar-div-row .pie_progress {
+  width: 110px;
+}
+
+.pending-white-card-section .pending-white-card .pending-white-card-inner .pending-white-card-body .progress-bar-div-root .progress-bar-div-row .pie_progress .pie_progress__number {
+  z-index: 9;
+  font-size: 30px;
+  letter-spacing: 0.25px;
+  text-align: center;
+  top: 42%;
+  -webkit-transform: translateY(-42%);
+          transform: translateY(-42%);
+}
+
+.pending-white-card-section .pending-white-card .pending-white-card-inner .pending-white-card-body .progress-bar-div-root .progress-bar-div-row .pie_progress .pie_progress__label {
+  margin-top: 18px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 21px;
+  z-index: 9;
+}
+
+.pending-white-card-section .pending-white-card .pending-white-card-inner .pending-white-card-body .progress-bar-div-root .progress-bar-div-row .pie_progress.pie_progress01 .pie_progress__number {
+  color: #05cb07;
+}
+
+.pending-white-card-section .pending-white-card .pending-white-card-inner .pending-white-card-body .progress-bar-div-root .progress-bar-div-row .pie_progress.pie_progress01 .pie_progress__label {
+  color: #05cb07;
+}
+
+.pending-white-card-section .pending-white-card .pending-white-card-inner .pending-white-card-body .progress-bar-div-root .progress-bar-div-row .pie_progress.pie_progress02 .pie_progress__number {
+  color: #ffbb17;
+}
+
+.pending-white-card-section .pending-white-card .pending-white-card-inner .pending-white-card-body .progress-bar-div-root .progress-bar-div-row .pie_progress.pie_progress02 .pie_progress__label {
+  color: #ffbb17;
+}
+
+.pending-white-card-section .pending-white-card .pending-white-card-inner .pending-white-card-body .progress-bar-div-root .progress-bar-div-row .pie_progress.pie_progress03 .pie_progress__number {
+  color: #98a9bc;
+}
+
+.pending-white-card-section .pending-white-card .pending-white-card-inner .pending-white-card-body .progress-bar-div-root .progress-bar-div-row .pie_progress.pie_progress03 .pie_progress__label {
+  color: #98a9bc;
+}
+
+.table-white-card-section .white-card {
+  padding: 0;
+  margin: 0 0 20px 0;
+  position: relative;
+  background: #fff;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 0 4px 0 #e5e5e5;
+          box-shadow: 0 0 4px 0 #e5e5e5;
+}
+
+.table-white-card-section .white-card .white-card-inner {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.table-white-card-section .white-card .white-card-inner .white-card-header {
+  padding: 15px 25px;
+  margin: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.table-white-card-section .white-card .white-card-inner .white-card-header .white-card-header-left {
+  padding: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: calc(100% - 85px);
+}
+
+.table-white-card-section .white-card .white-card-inner .white-card-header .white-card-header-left h3 {
+  font-size: 20px;
+  line-height: 1.4;
+  color: #252631;
+  letter-spacing: 0.2px;
+  margin: 0 0 0 0;
+  display: block;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+}
+
+.table-white-card-section .white-card .white-card-inner .white-card-header .white-card-header-right {
+  padding: 0;
+  margin: 0;
+  width: 85px;
+}
+
+.table-white-card-section .white-card .white-card-inner .white-card-header .white-card-header-right .btn.btn-white {
+  min-width: 85px;
+}
+
+.table-white-card-section .white-card .white-card-inner .white-card-body {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.table-white-card-section .white-card .white-card-inner .white-card-body .table {
+  font-size: 12px;
+}
+
+.table-white-card-section .white-card .white-card-inner .white-card-body .table thead th {
+  border-top: 0;
+  border-bottom: 0;
+  background: #fbfbfd;
+  padding: 12px 15px;
+  line-height: 24px;
+  font-size: 13px;
+  color: #8181a5;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  min-width: 100px;
+}
+
+.table-white-card-section .white-card .white-card-inner .white-card-body .table thead th:first-child {
+  padding-left: 25px;
+}
+
+.table-white-card-section .white-card .white-card-inner .white-card-body .table thead th:last-child {
+  padding-right: 25px;
+}
+
+.table-white-card-section .white-card .white-card-inner .white-card-body .table thead th.width-25 {
+  width: 25%;
+}
+
+.table-white-card-section .white-card .white-card-inner .white-card-body .table td {
+  border-top: 0;
+  border-bottom: 0;
+  font-weight: 400;
+  font-size: 14px;
+  color: #1c1d21;
+  padding: 12px 15px;
+  line-height: 24px;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+}
+
+.table-white-card-section .white-card .white-card-inner .white-card-body .table td:first-child {
+  padding-left: 25px;
+}
+
+.table-white-card-section .white-card .white-card-inner .white-card-body .table td:last-child {
+  padding-right: 25px;
+}
+
+.table-white-card-section .white-card .white-card-inner .white-card-body .table tbody tr:hover {
+  background-color: #fbfbfd;
+}
+
+.table-white-card-section .statistics-card {
+  padding: 0;
+  margin: 0 0 20px 0;
+  position: relative;
+  background: #fff;
+  border-radius: 12px;
+  -webkit-box-shadow: 0 0 4px 0 #e5e5e5;
+          box-shadow: 0 0 4px 0 #e5e5e5;
+}
+
+.table-white-card-section .statistics-card .statistics-card-inner {
+  padding: 0;
+  margin: 0;
+  position: relative;
+}
+
+.table-white-card-section .statistics-card .statistics-card-inner .statistics-card-header {
+  padding: 25px 15px 20px 15px;
+  margin: 0;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  width: 100%;
+}
+
+.table-white-card-section .statistics-card .statistics-card-inner .statistics-card-header h3 {
+  font-size: 18px;
+  line-height: 1.4;
+  color: #252631;
+  letter-spacing: 0.2px;
+  margin: 0 0 0 0;
+  display: block;
+  font-weight: 700;
+  font-family: "Lato", sans-serif;
+}
+
+.table-white-card-section .statistics-card .statistics-card-inner .statistics-card-body {
+  padding: 0 0 20px 0;
+  margin: 0;
+  position: relative;
+}
+
+.table-white-card-section .statistics-card .statistics-card-inner .statistics-card-body .statistics-number-view-box {
+  padding: 10px 15px 15px 15px;
+  margin: 0 0 10px 0;
+  position: relative;
+  font-family: "Lato", sans-serif;
+}
+
+.table-white-card-section .statistics-card .statistics-card-inner .statistics-card-body .statistics-number-view-box h4 {
+  font-size: 26px;
+  line-height: 1.4;
+  font-weight: 700;
+  color: #1c1d21;
+  letter-spacing: 0.2px;
+  display: block;
+  width: 100%;
+}
+
+.table-white-card-section .statistics-card .statistics-card-inner .statistics-card-body .statistics-number-view-box p {
+  font-size: 14px;
+  color: #8181a5;
+  line-height: 1.4;
+  display: block;
+  margin: 0 0 5px 0;
+}
+
+.table-white-card-section .statistics-card .statistics-card-inner .statistics-card-body .statistics-graph-div {
+  padding: 0;
+  position: relative;
+}
+
+.table-white-card-section .statistics-card .statistics-card-inner .statistics-card-body .statistics-graph-div .img-graph {
+  width: 100%;
+  padding: 0 0 0 0;
+}
+
+@media (max-width: 767px) {
+  .pending-white-card-section .pending-white-card .pending-white-card-inner .pending-white-card-header {
+    padding: 12px 12px;
+  }
+  .pending-white-card-section .pending-white-card .pending-white-card-inner .pending-white-card-header .pending-white-card-header-left {
+    width: calc(100% - 65px);
+    padding-right: 5px;
+  }
+  .pending-white-card-section .pending-white-card .pending-white-card-inner .pending-white-card-header .pending-white-card-header-left h3 {
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+  .pending-white-card-section .pending-white-card .pending-white-card-inner .pending-white-card-header .pending-white-card-header-right {
+    width: 65px;
+  }
+  .pending-white-card-section .pending-white-card .pending-white-card-inner .pending-white-card-header .pending-white-card-header-right .btn.btn-white {
+    min-width: 65px;
+    font-size: 12px;
+    padding: 6px 8px;
+    min-height: 34px;
+  }
+  .table-white-card-section .white-card .white-card-inner .white-card-header {
+    padding: 15px 15px;
+  }
+  .table-white-card-section .white-card .white-card-inner .white-card-header .white-card-header-left {
+    width: calc(100% - 65px);
+  }
+  .table-white-card-section .white-card .white-card-inner .white-card-header .white-card-header-left h3 {
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+  .table-white-card-section .white-card .white-card-inner .white-card-header .white-card-header-right {
+    width: 65px;
+  }
+  .table-white-card-section .white-card .white-card-inner .white-card-header .white-card-header-right .btn.btn-white {
+    min-width: 65px;
+    font-size: 12px;
+    padding: 6px 8px;
+    min-height: 34px;
+  }
+  .table-white-card-section .white-card .white-card-inner .white-card-body .table thead th {
+    padding: 12px 10px;
+    font-size: 12px;
+  }
+  .table-white-card-section .white-card .white-card-inner .white-card-body .table thead th:first-child {
+    padding-left: 12px;
+  }
+  .table-white-card-section .white-card .white-card-inner .white-card-body .table thead th:last-child {
+    padding-right: 12px;
+  }
+  .table-white-card-section .white-card .white-card-inner .white-card-body .table td {
+    font-size: 10px;
+    padding: 12px 10px;
+    line-height: 16px;
+  }
+  .table-white-card-section .white-card .white-card-inner .white-card-body .table td:first-child {
+    padding-left: 12px;
+  }
+  .table-white-card-section .white-card .white-card-inner .white-card-body .table td:last-child {
+    padding-right: 12px;
+  }
+  .table-white-card-section .statistics-card .statistics-card-inner .statistics-card-header h3 {
+    font-size: 16px;
+  }
+  .table-white-card-section .statistics-card .statistics-card-inner .statistics-card-body .statistics-number-view-box h4 {
+    font-size: 22px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .pending-white-card-section .pending-white-card .pending-white-card-inner .pending-white-card-header {
+    padding: 12px 12px;
+  }
+  .pending-white-card-section .pending-white-card .pending-white-card-inner .pending-white-card-header .pending-white-card-header-left {
+    width: calc(100% - 65px);
+    padding-right: 5px;
+  }
+  .pending-white-card-section .pending-white-card .pending-white-card-inner .pending-white-card-header .pending-white-card-header-left h3 {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+  .pending-white-card-section .pending-white-card .pending-white-card-inner .pending-white-card-header .pending-white-card-header-right {
+    width: 65px;
+  }
+  .pending-white-card-section .pending-white-card .pending-white-card-inner .pending-white-card-header .pending-white-card-header-right .btn.btn-white {
+    min-width: 65px;
+    font-size: 12px;
+    padding: 6px 8px;
+    min-height: 34px;
+  }
+  .table-white-card-section .white-card .white-card-inner .white-card-header {
+    padding: 15px 15px;
+  }
+  .table-white-card-section .white-card .white-card-inner .white-card-header .white-card-header-left {
+    width: calc(100% - 65px);
+  }
+  .table-white-card-section .white-card .white-card-inner .white-card-header .white-card-header-left h3 {
+    font-size: 16px;
+    letter-spacing: 0;
+  }
+  .table-white-card-section .white-card .white-card-inner .white-card-header .white-card-header-right {
+    width: 65px;
+  }
+  .table-white-card-section .white-card .white-card-inner .white-card-header .white-card-header-right .btn.btn-white {
+    min-width: 65px;
+    font-size: 12px;
+    padding: 6px 8px;
+    min-height: 34px;
+  }
+  .table-white-card-section .white-card .white-card-inner .white-card-body .table thead th {
+    padding: 12px 10px;
+    font-size: 12px;
+  }
+  .table-white-card-section .white-card .white-card-inner .white-card-body .table thead th:first-child {
+    padding-left: 15px;
+  }
+  .table-white-card-section .white-card .white-card-inner .white-card-body .table thead th:last-child {
+    padding-right: 15px;
+  }
+  .table-white-card-section .white-card .white-card-inner .white-card-body .table td {
+    font-size: 12px;
+    padding: 12px 10px;
+    line-height: 18px;
+  }
+  .table-white-card-section .white-card .white-card-inner .white-card-body .table td:first-child {
+    padding-left: 15px;
+  }
+  .table-white-card-section .white-card .white-card-inner .white-card-body .table td:last-child {
+    padding-right: 15px;
+  }
+  .table-white-card-section .statistics-card .statistics-card-inner .statistics-card-header h3 {
+    font-size: 16px;
+  }
+  .table-white-card-section .statistics-card .statistics-card-inner .statistics-card-body .statistics-number-view-box h4 {
+    font-size: 22px;
+  }
+}
+/*# sourceMappingURL=dasboard.css.map */
