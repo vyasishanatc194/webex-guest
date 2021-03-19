@@ -35,7 +35,7 @@
               <div class="col-lg-12 col-md-12 p-0">
 
                 <section class="waiting-root-area-section">
-                  <div class="waiting-root-area-div">
+                  <div class="waiting-root-area-div active-fullscreen" id="waiting-root-area-div">
 
                     <div class="waiting-root-tp-div">
                       <div class="waiting-root-tp-row-div">
@@ -81,15 +81,16 @@
                         <div class="waiting-root-lt-right-div">
                           <div class="btn-nav-list-div">
                             <ul class="btn-nav-list-ul">
-                              <li class="btn-nav-items">
-                                <a href="#" class="btn btn-common-secondary btn-icon"> 
+                              <li class="btn-nav-items hidden-fullscreen">
+                                <button class="btn btn-common-secondary btn-icon"> 
                                   <span class="bg-custom-icon settings-icon"></span>
-                                </a>
+                                </button>
                               </li>
+
                               <li class="btn-nav-items">
-                                <a href="#" class="btn btn-common-secondary btn-icon"> 
+                                <button id="full-screen-link-btn" class="btn btn-common-secondary btn-icon"> 
                                   <span class="bg-custom-icon full-screen-selector-icon"></span> 
-                                </a>
+                                </button>
                               </li>
                               
                               <li class="btn-nav-items">
@@ -111,7 +112,7 @@
                                 </div>
                               </li>
 
-                              <li class="btn-nav-items btn-nav-items-width-100">
+                              <li class="btn-nav-items hidden-fullscreen btn-nav-items-width-100">
                                 <button type="button" class="btn btn-primary btn-common-danger">
                                   <span class="icon-span mr-2"> <span class="bg-custom-icon telephone-button"></span> </span>
                                   <span class="text-span mr-6px"> Leave </span>
@@ -144,7 +145,9 @@
 <script src="assets/js/custom.js"></script>
 <script>
   $(document).ready(function () {
-
+    $("#full-screen-link-btn").click(function(){
+      $("#waiting-root-area-div").toggleClass("active-fullscreen");
+    });
   });
 </script>
 
