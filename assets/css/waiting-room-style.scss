@@ -243,6 +243,10 @@
         }
       }
 
+      .btn.btn-common-secondary {
+        background: transparent linear-gradient(132deg, #0072ff 0%, #00c6ff 100%);
+      }
+
       .btn.dropdown-toggle {
         &::after {
           display: none;
@@ -342,8 +346,9 @@
                 min-width: 54px;
                 min-height: 54px;
                 z-index: 1;
+                background: transparent linear-gradient(132deg, #0072ff 0%, #00c6ff 100%);
 
-                .btn-common-secondary {
+                &.btn-common-secondary {
                   &::before {
                     content: "";
                     min-width: inherit;
@@ -357,7 +362,17 @@
                   }
                 }
 
+                .minimise-screen-selector-icon.icon-none {
+                  display: inline-block;
+                }
+
                 .full-screen-selector-icon {
+                  width: 24px;
+                  height: 23px;
+                  display: none;
+                }
+
+                .volume-icon {
                   width: 24px;
                   height: 23px;
                 }
@@ -368,10 +383,16 @@
                 margin-bottom: 15px;
                 width: 54px;
                 min-width: 54px;
+                padding: 18px 0 11px 0;
+
+                .range-slider-custom {
+                  min-height: 176px;
+                }
 
                 .range-slider-custom {
                   .slider {
-                    transform: rotate(90deg) translate(calc(50% - 5px), 42px);
+                    transform: rotate(90deg) translate(calc(50% - 5px), 53px);
+                    width: 158px !important;
                   }
                 }
               }
@@ -736,8 +757,13 @@
                   min-width: 36px;
                   min-height: 36px;
 
-                  .full-screen-selector-icon {
+                  .minimise-screen-selector-icon {
                     width: 15px;
+                    height: 15px;
+                  }
+
+                  .volume-icon {
+                    width: 16px;
                     height: 15px;
                   }
                 }
@@ -746,12 +772,26 @@
                   border-radius: 7px;
                   width: 37px;
                   min-width: 37px;
-                  margin-top: 8px;
-                  margin-bottom: 8px;
+                  margin-top: 10px;
+                  margin-bottom: 10px;
+                  padding: 12px 0 2px 0;
+
+                  .volume-high-black-icon {
+                    width: 14px;
+                    height: 13px;
+                  }
+
+                  .volume-low-black-icon {
+                    width: 9px;
+                    height: 13px;
+                  }
 
                   .range-slider-custom {
+                    min-height: 122px;
+                    margin-top: -4px;
+
                     .slider {
-                      width: 110px !important;
+                      width: 109px !important;
                       transform: rotate(90deg) translate(calc(50% - 5px), 37px);
                     }
                   }

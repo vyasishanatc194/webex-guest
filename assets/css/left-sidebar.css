@@ -241,6 +241,12 @@
   background-image: url("data:image/svg+xml,%3Csvg id='full-screen-selector' xmlns='http://www.w3.org/2000/svg' width='18.306' height='18.307' viewBox='0 0 18.306 18.307'%3E%3Cg id='fullscreen_x5F_alt' transform='translate(0)'%3E%3Cg id='Group_13' data-name='Group 13'%3E%3Cpath id='Path_9' data-name='Path 9' d='M25.385,23.768,21.618,20,20,21.618l3.768,3.767-1.479,1.479h4.576V22.288Z' transform='translate(-8.559 -8.559)' fill='%23fff'/%3E%3Cpath id='Path_10' data-name='Path 10' d='M1.479,3.1,5.247,6.865,6.865,5.247,3.1,1.479,4.576,0H0V4.576Z' fill='%23fff'/%3E%3Cpath id='Path_11' data-name='Path 11' d='M23.768,1.479,20,5.247l1.618,1.618L25.385,3.1l1.479,1.479V0H22.288Z' transform='translate(-8.559)' fill='%23fff'/%3E%3Cpath id='Path_12' data-name='Path 12' d='M6.865,21.618,5.247,20,1.479,23.768,0,22.288v4.576H4.576L3.1,25.385Z' transform='translate(0 -8.559)' fill='%23fff'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
 }
 
+.minimise-screen-selector-icon {
+  width: 22px;
+  height: 22px;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='21.49' height='21.489' viewBox='0 0 21.49 21.489'%3E%3Cg id='full-screen-selector' transform='translate(0)'%3E%3Cg id='fullscreen_x5F_alt' transform='translate(0)'%3E%3Cg id='Group_13' data-name='Group 13'%3E%3Cpath id='Path_9' data-name='Path 9' d='M26.322,24.423,21.9,20,20,21.9l4.423,4.423-1.737,1.737h5.372V22.686Z' transform='translate(41.489 41.489) rotate(180)' fill='%23fff'/%3E%3Cpath id='Path_10' data-name='Path 10' d='M1.737,3.636,6.159,8.058l1.9-1.9L3.636,1.737,5.372,0H0V5.372Z' transform='translate(8.058 8.058) rotate(180)' fill='%23fff'/%3E%3Cpath id='Path_11' data-name='Path 11' d='M24.423,1.737,20,6.159l1.9,1.9,4.423-4.423,1.737,1.737V0H22.686Z' transform='translate(41.489 8.058) rotate(180)' fill='%23fff'/%3E%3Cpath id='Path_12' data-name='Path 12' d='M8.058,21.9,6.159,20,1.737,24.423,0,22.686v5.372H5.372L3.636,26.322Z' transform='translate(8.058 41.489) rotate(180)' fill='%23fff'/%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E%0A");
+}
+
 .volume-icon {
   width: 21px;
   height: 19px;
