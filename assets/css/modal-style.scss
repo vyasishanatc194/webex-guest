@@ -1929,14 +1929,91 @@ $proxima: 'Proxima Nova Rg';
                 padding-bottom: 55px !important;
                 padding-top: 0 !important;
             }
-
             
+            // new guest site modal
             .audio-body {
+                .audio-content {
+                    padding-left: 17px;
+                    padding-right: 35px;
+                    h5 {
+                        margin-bottom: 30px;
+                    }
 
+                    .form-group label.col-form-label {
+                        white-space: nowrap;
+                    }
+
+                    .audio-group {
+                        padding-left: 20px;
+                    }
+                }
             }
+
+            .footer-audio-test {
+                padding: 10px 20px 36px 20px !important;
+            }
+
+            .audio-body-2 {
+                .audio-content {
+                    h5 {
+                        margin-bottom: 58px;    
+                    }
+
+                    .form-group {
+                        margin-bottom: 38px;
+                    }
+
+                    .audio-content-2 {  
+                        padding-right: 60px;
+                    }   
+                }
+            }
+            
+            .footer-body-2 {
+                padding-bottom: 25px !important;
+            }
+
+
+            .leaving-body {
+                padding: 30px 78px 20px 72px;
+
+                .content-leaving {
+                    h5 {
+                        margin-bottom: 7px;
+                    }
+                }
+            }
+
+            .footer-leaving {
+                padding-bottom: 33px;
+            }
+
+            .changes-body {
+               .session-changes {
+                   padding-top: 10px;
+
+                   h4 {
+                    margin-bottom: 42px;
+                    
+                   }
+               } 
+            }
+
+            .changes-footer {
+                .btn {
+                    height: 54px;
+                }
+            }
+            
         }
+
+        
     }
+
+    
   }
+
+
 
   .modal-backdrop {
     background: rgba(0, 0, 0, 0.75);
@@ -2037,6 +2114,30 @@ $proxima: 'Proxima Nova Rg';
 
     // select
    
+ }
+
+ .modal-seeting {
+     .modal-dialog {
+         margin: 0 auto;
+
+         .modal-content {
+             border-radius: 0px;
+
+             .modal-header {
+                 border-radius: 0;
+                 max-height: 46px;
+                 min-height: 46px;
+
+                 h5 {
+
+                 }
+             }
+
+             .modal-footer {
+                 border-radius: 0;
+             }
+         }
+     }
  }
 
  .select2-container .select2-dropdown .select2-results ul {
@@ -2545,12 +2646,20 @@ $proxima: 'Proxima Nova Rg';
     // guest mobile
 
     .modal-guest {
+
+        .max-393 {
+            max-width: 393px !important;
+        }
+        
+
         .modal-dialog {
             max-width: 100%;
-            margin: 0 auto;
+            // margin: 0 auto;
             min-height: 100vh;
 
             .modal-content {
+
+
                 .modal-header {
                     min-height: 46px;
                     max-height: 46px;
@@ -2643,6 +2752,14 @@ $proxima: 'Proxima Nova Rg';
                     }
 
                     .audio-content {
+
+                        padding-left: 0;
+                        padding-right:  15px;
+                        
+                        .audio-group {
+                            padding-left: 0;
+                        }
+
                         h5 {
                             font-size: 18px;
                             line-height: 22px;
@@ -2698,10 +2815,103 @@ $proxima: 'Proxima Nova Rg';
 
                 .footer-join {
                     padding-bottom: 16px !important;
+                    .btn {
+                        max-width: 175px;
+                    }
                 }
 
                 .footer-audio-test {
                     padding-bottom: 26px !important;
+
+                    .btn {
+                        margin: 0 9px;
+                    }
+                }
+
+                .audio-body-2 {
+
+                    .audio-content {
+                        h5 {
+                            margin-bottom: 60px;    
+                        }
+    
+                        .form-group {
+                            margin-bottom: 32px;
+                        }
+    
+                        .audio-content-2 {  
+                            padding-right: 20px;
+                            .volume {
+                                ul {
+                                    padding-left: 0;
+                                    li {
+                                        a {
+                                            width: 8px;
+                                            height: 30px;
+                                        }
+                                    }
+                                }
+                            }
+                        }   
+                    }
+                }
+                
+                .footer-body-2 {
+                    padding-bottom: 25px !important;
+
+                    .btn {
+                        max-width: 175px;
+                    }
+                }
+
+                .leaving-body {
+                    padding: 27px 20px 10px 20px;
+
+                    .content-leaving {
+                    
+                        max-width: 220px;
+                        margin: 0 auto;
+
+                        h5 {
+                            font-size: 18px;
+                            line-height: 28px;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+
+                .footer-leaving {
+                    padding-bottom: 31px;
+                    display: flex;
+                    flex-direction: column;
+
+                    .btn {
+                        height: 44px;
+                        margin: 0 8px;
+                        max-width: 220px;
+                        margin-bottom: 15px;
+                        
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+
+                .changes-body {
+
+                    .session-changes {
+                        padding-top: 0px;
+                        h4 {
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
+
+                .changes-footer {
+                    .btn {
+                        max-width: 175px;
+                        height: 45px !important; 
+                    }
                 }
 
             }
@@ -2754,10 +2964,10 @@ $proxima: 'Proxima Nova Rg';
     .modal-guest {
         .modal-dialog {
             max-width: 480px;
-            margin: 0 auto;
             min-height: 100vh;
 
             .modal-content {
+
                 .modal-header {
                     min-height: 46px;
                     max-height: 46px;
@@ -2850,10 +3060,13 @@ $proxima: 'Proxima Nova Rg';
                     }
 
                     .audio-content {
+                        padding-left: 0;
+                        padding-right: 8px;
+
                         h5 {
                             font-size: 18px;
                             line-height: 22px;
-                            margin-bottom: 30px;
+                            margin-bottom: 25px;
                         }
 
 
@@ -2903,11 +3116,106 @@ $proxima: 'Proxima Nova Rg';
 
                 .footer-join {
                     padding-bottom: 16px !important;
+
+                    .btn {
+                        max-width: 175px;
+                        margin: 0;
+                    }
                 }
 
                 .footer-audio-test {
                     padding-bottom: 26px !important;
+
+                    .btn {
+                        max-width: 175px;
+                        margin: 0 9px;
+                    }
                 }
+
+                .audio-body-2 {
+                    padding-top: 27px !important;
+
+                    .audio-content {
+                        h5 {
+                            margin-bottom: 33px; 
+                            font-size: 18px;
+                            line-height: 22px;   
+                        }
+    
+                        .form-group {
+                            margin-bottom: 18px;
+                        }
+    
+                        .audio-content-2 {  
+                            padding-right: 20px;
+                        } 
+                        
+                        .volume {
+                            ul {
+                                
+                                li {
+                                    a {
+                                        width: 8px;
+                                        height: 30px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                
+                .footer-body-2 {
+                    padding-top: 15px !important;
+                    padding-bottom: 25px !important;
+
+                    .btn {
+                        max-width: 175px;
+                    }
+                }
+
+                .leaving-body {
+                    padding: 27px 20px 10px 20px;
+
+                    .content-leaving {
+                        max-width: unset;
+                        
+                        h5 {
+                            font-size: 18px;
+                            line-height: 20px;
+                            margin-bottom: 9px;
+                            
+                        }
+                    }
+                }
+
+                .footer-leaving {
+                    padding-bottom: 31px;
+
+                    .btn {
+                        max-width: 175px;
+                        height: 44px;
+                        margin: 0 8px;
+                    }
+                }
+
+                .changes-body {
+
+                    .session-changes {
+                        padding-top: 0px;
+
+                        h4 {
+                            margin-bottom: 0px;
+                        }
+                    }
+                }
+
+                .changes-footer {
+                    .btn {
+                        max-width: 175px;
+                        height: 45px !important; 
+                    }
+                }
+
             }
         }
     }
@@ -2919,9 +3227,9 @@ $proxima: 'Proxima Nova Rg';
         .modal-dialog {
             .modal-content {
 
-                    .header-partciapnt {
+                .header-partciapnt {
                         padding-top: 16px !important;
-                    }
+                }
 
                 .close-top-right {
                     overflow: hidden;
@@ -2974,7 +3282,6 @@ $proxima: 'Proxima Nova Rg';
                     }
                 }
 
-                
             }
         }
     }

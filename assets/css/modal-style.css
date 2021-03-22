@@ -2118,6 +2118,67 @@
   padding-top: 0 !important;
 }
 
+.modal-custom .modal-dialog .modal-content .audio-body .audio-content {
+  padding-left: 17px;
+  padding-right: 35px;
+}
+
+.modal-custom .modal-dialog .modal-content .audio-body .audio-content h5 {
+  margin-bottom: 30px;
+}
+
+.modal-custom .modal-dialog .modal-content .audio-body .audio-content .form-group label.col-form-label {
+  white-space: nowrap;
+}
+
+.modal-custom .modal-dialog .modal-content .audio-body .audio-content .audio-group {
+  padding-left: 20px;
+}
+
+.modal-custom .modal-dialog .modal-content .footer-audio-test {
+  padding: 10px 20px 36px 20px !important;
+}
+
+.modal-custom .modal-dialog .modal-content .audio-body-2 .audio-content h5 {
+  margin-bottom: 58px;
+}
+
+.modal-custom .modal-dialog .modal-content .audio-body-2 .audio-content .form-group {
+  margin-bottom: 38px;
+}
+
+.modal-custom .modal-dialog .modal-content .audio-body-2 .audio-content .audio-content-2 {
+  padding-right: 60px;
+}
+
+.modal-custom .modal-dialog .modal-content .footer-body-2 {
+  padding-bottom: 25px !important;
+}
+
+.modal-custom .modal-dialog .modal-content .leaving-body {
+  padding: 30px 78px 20px 72px;
+}
+
+.modal-custom .modal-dialog .modal-content .leaving-body .content-leaving h5 {
+  margin-bottom: 7px;
+}
+
+.modal-custom .modal-dialog .modal-content .footer-leaving {
+  padding-bottom: 33px;
+}
+
+.modal-custom .modal-dialog .modal-content .changes-body .session-changes {
+  padding-top: 10px;
+}
+
+.modal-custom .modal-dialog .modal-content .changes-body .session-changes h4 {
+  margin-bottom: 42px;
+}
+
+.modal-custom .modal-dialog .modal-content .changes-footer .btn {
+  height: 54px;
+}
+
 .modal-backdrop {
   background: rgba(0, 0, 0, 0.75);
   z-index: 9999;
@@ -2219,6 +2280,24 @@
   transition: all 0.3s ease-in-out;
   -webkit-transform: rotate(-180deg) !important;
           transform: rotate(-180deg) !important;
+}
+
+.modal-seeting .modal-dialog {
+  margin: 0 auto;
+}
+
+.modal-seeting .modal-dialog .modal-content {
+  border-radius: 0px;
+}
+
+.modal-seeting .modal-dialog .modal-content .modal-header {
+  border-radius: 0;
+  max-height: 46px;
+  min-height: 46px;
+}
+
+.modal-seeting .modal-dialog .modal-content .modal-footer {
+  border-radius: 0;
 }
 
 .select2-container .select2-dropdown .select2-results ul {
@@ -2590,9 +2669,11 @@
   .select2-results__option {
     font-size: 16px;
   }
+  .modal-guest .max-393 {
+    max-width: 393px !important;
+  }
   .modal-guest .modal-dialog {
     max-width: 100%;
-    margin: 0 auto;
     min-height: 100vh;
   }
   .modal-guest .modal-dialog .modal-content .modal-header {
@@ -2660,6 +2741,13 @@
     height: 39px;
     width: 39px;
   }
+  .modal-guest .modal-dialog .modal-content .modal-body .audio-content {
+    padding-left: 0;
+    padding-right: 15px;
+  }
+  .modal-guest .modal-dialog .modal-content .modal-body .audio-content .audio-group {
+    padding-left: 0;
+  }
   .modal-guest .modal-dialog .modal-content .modal-body .audio-content h5 {
     font-size: 18px;
     line-height: 22px;
@@ -2698,8 +2786,77 @@
   .modal-guest .modal-dialog .modal-content .footer-join {
     padding-bottom: 16px !important;
   }
+  .modal-guest .modal-dialog .modal-content .footer-join .btn {
+    max-width: 175px;
+  }
   .modal-guest .modal-dialog .modal-content .footer-audio-test {
     padding-bottom: 26px !important;
+  }
+  .modal-guest .modal-dialog .modal-content .footer-audio-test .btn {
+    margin: 0 9px;
+  }
+  .modal-guest .modal-dialog .modal-content .audio-body-2 .audio-content h5 {
+    margin-bottom: 60px;
+  }
+  .modal-guest .modal-dialog .modal-content .audio-body-2 .audio-content .form-group {
+    margin-bottom: 32px;
+  }
+  .modal-guest .modal-dialog .modal-content .audio-body-2 .audio-content .audio-content-2 {
+    padding-right: 20px;
+  }
+  .modal-guest .modal-dialog .modal-content .audio-body-2 .audio-content .audio-content-2 .volume ul {
+    padding-left: 0;
+  }
+  .modal-guest .modal-dialog .modal-content .audio-body-2 .audio-content .audio-content-2 .volume ul li a {
+    width: 8px;
+    height: 30px;
+  }
+  .modal-guest .modal-dialog .modal-content .footer-body-2 {
+    padding-bottom: 25px !important;
+  }
+  .modal-guest .modal-dialog .modal-content .footer-body-2 .btn {
+    max-width: 175px;
+  }
+  .modal-guest .modal-dialog .modal-content .leaving-body {
+    padding: 27px 20px 10px 20px;
+  }
+  .modal-guest .modal-dialog .modal-content .leaving-body .content-leaving {
+    max-width: 220px;
+    margin: 0 auto;
+  }
+  .modal-guest .modal-dialog .modal-content .leaving-body .content-leaving h5 {
+    font-size: 18px;
+    line-height: 28px;
+    margin-bottom: 10px;
+  }
+  .modal-guest .modal-dialog .modal-content .footer-leaving {
+    padding-bottom: 31px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .modal-guest .modal-dialog .modal-content .footer-leaving .btn {
+    height: 44px;
+    margin: 0 8px;
+    max-width: 220px;
+    margin-bottom: 15px;
+  }
+  .modal-guest .modal-dialog .modal-content .footer-leaving .btn:last-child {
+    margin-bottom: 0;
+  }
+  .modal-guest .modal-dialog .modal-content .changes-body .session-changes {
+    padding-top: 0px;
+  }
+  .modal-guest .modal-dialog .modal-content .changes-body .session-changes h4 {
+    margin-bottom: 0px;
+  }
+  .modal-guest .modal-dialog .modal-content .changes-footer .btn {
+    max-width: 175px;
+    height: 45px !important;
   }
 }
 
@@ -2742,7 +2899,6 @@
   }
   .modal-guest .modal-dialog {
     max-width: 480px;
-    margin: 0 auto;
     min-height: 100vh;
   }
   .modal-guest .modal-dialog .modal-content .modal-header {
@@ -2812,10 +2968,14 @@
     height: 39px;
     width: 39px;
   }
+  .modal-guest .modal-dialog .modal-content .modal-body .audio-content {
+    padding-left: 0;
+    padding-right: 8px;
+  }
   .modal-guest .modal-dialog .modal-content .modal-body .audio-content h5 {
     font-size: 18px;
     line-height: 22px;
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
   .modal-guest .modal-dialog .modal-content .modal-body .audio-content .form-group {
     margin-bottom: 15px;
@@ -2847,8 +3007,70 @@
   .modal-guest .modal-dialog .modal-content .footer-join {
     padding-bottom: 16px !important;
   }
+  .modal-guest .modal-dialog .modal-content .footer-join .btn {
+    max-width: 175px;
+    margin: 0;
+  }
   .modal-guest .modal-dialog .modal-content .footer-audio-test {
     padding-bottom: 26px !important;
+  }
+  .modal-guest .modal-dialog .modal-content .footer-audio-test .btn {
+    max-width: 175px;
+    margin: 0 9px;
+  }
+  .modal-guest .modal-dialog .modal-content .audio-body-2 {
+    padding-top: 27px !important;
+  }
+  .modal-guest .modal-dialog .modal-content .audio-body-2 .audio-content h5 {
+    margin-bottom: 33px;
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .modal-guest .modal-dialog .modal-content .audio-body-2 .audio-content .form-group {
+    margin-bottom: 18px;
+  }
+  .modal-guest .modal-dialog .modal-content .audio-body-2 .audio-content .audio-content-2 {
+    padding-right: 20px;
+  }
+  .modal-guest .modal-dialog .modal-content .audio-body-2 .audio-content .volume ul li a {
+    width: 8px;
+    height: 30px;
+  }
+  .modal-guest .modal-dialog .modal-content .footer-body-2 {
+    padding-top: 15px !important;
+    padding-bottom: 25px !important;
+  }
+  .modal-guest .modal-dialog .modal-content .footer-body-2 .btn {
+    max-width: 175px;
+  }
+  .modal-guest .modal-dialog .modal-content .leaving-body {
+    padding: 27px 20px 10px 20px;
+  }
+  .modal-guest .modal-dialog .modal-content .leaving-body .content-leaving {
+    max-width: unset;
+  }
+  .modal-guest .modal-dialog .modal-content .leaving-body .content-leaving h5 {
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 9px;
+  }
+  .modal-guest .modal-dialog .modal-content .footer-leaving {
+    padding-bottom: 31px;
+  }
+  .modal-guest .modal-dialog .modal-content .footer-leaving .btn {
+    max-width: 175px;
+    height: 44px;
+    margin: 0 8px;
+  }
+  .modal-guest .modal-dialog .modal-content .changes-body .session-changes {
+    padding-top: 0px;
+  }
+  .modal-guest .modal-dialog .modal-content .changes-body .session-changes h4 {
+    margin-bottom: 0px;
+  }
+  .modal-guest .modal-dialog .modal-content .changes-footer .btn {
+    max-width: 175px;
+    height: 45px !important;
   }
 }
 
