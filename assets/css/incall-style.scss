@@ -1862,6 +1862,13 @@
     .main-center-section .incall-area-section .in-call-video-bg-fixed-div .in-call-video-bg {
       height: calc(100vh + 20%);
     }
+
+    .in-call-action-area-div .btn-group-root .dropup-custom .btn.btn-common-secondary.dropdown-toggle .icon-span {
+      .un-mute-white-microphone-icon {
+        width: 20px;
+        height: 24px;
+      }
+    }
   }
 
   @media (min-width: 470px) and (max-width: 620px) and (max-height: 500px) and (orientation: landscape) {
@@ -1875,6 +1882,13 @@
 
     .main-center-section .incall-area-section .in-call-video-bg-fixed-div .in-call-video-bg {
       height: calc(100vh + 30%);
+    }
+
+    .in-call-action-area-div .btn-group-root .dropup-custom .btn.btn-common-secondary.dropdown-toggle .icon-span {
+      .un-mute-white-microphone-icon {
+        width: 20px;
+        height: 24px;
+      }
     }
   }
 }
