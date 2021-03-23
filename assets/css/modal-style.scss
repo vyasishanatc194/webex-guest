@@ -2143,7 +2143,7 @@ $proxima: 'Proxima Nova Rg';
                 }
 
                 .tab-button {
-                    padding: 16px 16px 13px 16px;
+                    padding: 16px 16px 33px 16px;
                     margin-top: auto;
                     display: flex;
                     align-items: center;
@@ -2936,7 +2936,8 @@ $proxima: 'Proxima Nova Rg';
     .modal-seeting {
         .modal-dialog {
             margin: 0 auto;
-   
+            
+
             .modal-content {
                 border-radius: 0px;
 
@@ -2983,12 +2984,16 @@ $proxima: 'Proxima Nova Rg';
                 }
 
                 .modal-body {
-                   
+                   padding-bottom: 0 !important;
+                    padding-top: 0 !important;
+
                     .setting-content {
-                        min-height: calc(100vh - 94px);
+                        min-height: calc(100vh - 46px);
+                        max-height: calc(100vh - 46px);
                         overflow-y: scroll;
                         display: block;
-                        
+                        overflow-x: hidden;
+                        position: relative;
 
                         .nav-tabs {
                             max-width: 560px;
@@ -3001,6 +3006,8 @@ $proxima: 'Proxima Nova Rg';
 
                         .tab-inner {
                             min-height: unset;
+                            padding-top: 22px;
+                            
 
                             .form-group {
                                 margin-bottom: 15px;
@@ -3028,6 +3035,32 @@ $proxima: 'Proxima Nova Rg';
                                 }
                             }
                         }
+
+                        .tab-button {
+                            margin-top: 20px;
+                            padding-bottom: 25px;
+
+                            .btn {
+                                height: 45px;
+                            }
+                        }
+
+                        .btn-general {
+                            margin-top: 53px;
+                        }
+
+                        .pb-10 {
+                            padding-bottom: 10px;
+                        }
+
+                        .mt-10 {
+                            margin-top: 10px;
+                        }
+
+                        .mt-0 {
+                            margin-top: 0px;
+                        }
+                      
                     }
 
                     
