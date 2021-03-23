@@ -473,6 +473,17 @@
         &:last-child {
           margin-right: 0;
         }
+
+        &.share-btn-item-li {
+          .btn-icon.btn-play-paused {
+            .paused-icon {
+              width: 20px;
+              height: 18px;
+              position: relative;
+              top: 2px;
+            }
+          }
+        }
       }
     }
 
@@ -887,6 +898,10 @@
           &.share-screen-btn-item-li {
             display: none;
           }
+
+          &.hidden-ipad-pro-btn-item-li {
+            display: none;
+          }
         }
       }
     }
@@ -1173,12 +1188,8 @@
 @media (min-width: 768px) and (max-width: 1024px) {
   .main-center-section {
     .incall-area-section {
-      .tplf-recording-option-div {
-        padding: 15px;
-      }
-
       .tplf-share-screen-div {
-        padding: 15px;
+        padding: 18px 40px 20px 40px;
       }
     }
   }
@@ -1220,6 +1231,18 @@
           &.participants-btn-item-li,
           &.share-screen-btn-item-li {
             display: none;
+          }
+
+          &.hidden-mobile-ls-btn-item-li {
+            display: none;
+          }
+
+          &.more-opt-btn-item-li {
+            .dropup-custom .btn.btn-common-secondary.dropdown-toggle.remove-arrow .text-span {
+              .hide-sm-ls {
+                display: none;
+              }
+            }
           }
         }
       }
@@ -1338,14 +1361,20 @@
   .in-call-user-ss-box {
     .in-call-user-ss-img-thumb {
       border: 3px solid #fff;
-      height: 100px;
-      width: 100px;
+      height: 78px;
+      width: 78px;
     }
 
     .in-call-user-ss-content-div {
+      width: 117px;
+
       .in-call-user-ss-content-row {
+        padding: 4px 12px 4px 14px;
+        min-height: 26px;
+
         p {
           font-size: 12px;
+          text-align: left;
           width: calc(100% - 21px);
         }
 
@@ -1431,17 +1460,27 @@
       }
     }
   }
+
+  @media (min-width: 768px) and (max-width: 1024px) and (min-height: 600px) {
+    .main-center-section .incall-area-div {
+      zoom: 90%;
+    }
+
+    .in-call-area-root .in-call-area-top .in-call-area-top-center {
+      min-height: auto;
+    }
+
+    .main-center-section .incall-area-section .in-call-video-bg-fixed-div .in-call-video-bg {
+      height: calc(100vh + 10%);
+    }
+  }
 }
 
 @media (min-width: 470px) and (max-width: 1024px) and (max-height: 500px) and (orientation: landscape) {
   .main-center-section {
     .incall-area-section {
-      .tplf-recording-option-div {
-        padding: 15px;
-      }
-
       .tplf-share-screen-div {
-        padding: 15px;
+        padding: 18px 40px 20px 40px;
       }
     }
   }
@@ -1483,6 +1522,18 @@
           &.participants-btn-item-li,
           &.share-screen-btn-item-li {
             display: none;
+          }
+
+          &.hidden-mobile-ls-btn-item-li {
+            display: none;
+          }
+
+          &.more-opt-btn-item-li {
+            .dropup-custom .btn.btn-common-secondary.dropdown-toggle.remove-arrow .text-span {
+              .hide-sm-ls {
+                display: none;
+              }
+            }
           }
         }
       }
@@ -1655,6 +1706,22 @@
               }
             }
           }
+
+          &.dropdown-menu-right {
+            left: auto !important;
+            min-width: 339px;
+            padding: 5px 10px;
+          }
+        }
+      }
+
+      .more-opt-btn-item-li {
+        .dropup-custom {
+          .dropdown-form-div {
+            .form-group.d-none {
+              display: block !important;
+            }
+          }
         }
       }
 
@@ -1667,14 +1734,20 @@
   .in-call-user-ss-box {
     .in-call-user-ss-img-thumb {
       border: 3px solid #fff;
-      height: 100px;
-      width: 100px;
+      height: 78px;
+      width: 78px;
     }
 
     .in-call-user-ss-content-div {
+      width: 117px;
+
       .in-call-user-ss-content-row {
+        padding: 4px 12px 4px 14px;
+        min-height: 26px;
+
         p {
           font-size: 12px;
+          text-align: left;
           width: calc(100% - 21px);
         }
 
@@ -1761,6 +1834,22 @@
     }
   }
 
+  .in-call-are-body-top-div {
+    .in-call-are-bt-center-div {
+      .btn-group-bx-div {
+        .btn.btn-screen-sharing-it {
+          font-size: 14px;
+          min-height: 35px;
+        }
+
+        .btn.btn-sharing-it {
+          font-size: 14px;
+          min-height: 35px;
+        }
+      }
+    }
+  }
+
   @media (min-width: 470px) and (max-width: 806px) and (max-height: 500px) and (orientation: landscape) {
     .main-center-section .incall-area-div {
       zoom: 80%;
@@ -1772,6 +1861,13 @@
 
     .main-center-section .incall-area-section .in-call-video-bg-fixed-div .in-call-video-bg {
       height: calc(100vh + 20%);
+    }
+
+    .in-call-action-area-div .btn-group-root .dropup-custom .btn.btn-common-secondary.dropdown-toggle .icon-span {
+      .un-mute-white-microphone-icon {
+        width: 20px;
+        height: 24px;
+      }
     }
   }
 
@@ -1786,6 +1882,13 @@
 
     .main-center-section .incall-area-section .in-call-video-bg-fixed-div .in-call-video-bg {
       height: calc(100vh + 30%);
+    }
+
+    .in-call-action-area-div .btn-group-root .dropup-custom .btn.btn-common-secondary.dropdown-toggle .icon-span {
+      .un-mute-white-microphone-icon {
+        width: 20px;
+        height: 24px;
+      }
     }
   }
 }
