@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta name="description" content="" />
+<meta name="author" content="" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<title>Chat | Certis</title>
+<meta content='initial-scale=1.0,user-scalable=no,maximum-scale=1,width=device-width' name='viewport' />
+<meta name="theme-color" content="#002855">
+<meta name="msapplication-navbutton-color" content="#002855">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#002855">
+<link href='assets/images/favicon.png' rel='shortcut icon'>
+<link href="assets/css/bootstrap.min.css" media="all" rel="stylesheet" type="text/css" />
+<link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet" />
+<link href="assets/css/feather.min.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/fonts/lato/lato-font.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/fonts/proxima/stylesheet.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/owl.carousel.min.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/modal-style.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/incall-style.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/chat-style.css" media="all" rel="stylesheet" type="text/css" />
+<script src="assets/js/modernizr.js"></script>
+</head>
+
+<body>
+
+<div id="wrapper" class="wrapper dashboard-wrapper">
+
+  <!-- Begin page content -->
+  <main role="main" class="common-wrapper-area-main">
+    <div class="common-wrapper-area-div">
+
+        <!--  main  -->
+        <div class="main-chat-section">
+          <div class="main-chat-div">
+            <div class="container-fluid p-0">
+              <div class="row m-0">
+                <div class="col-lg-12 col-md-12 p-0">
+
+                  <section class="in-chat-root-area-section">
+                    <div class="in-chat-root-area-div">
+
+                      <div class="in-chat-root-area-left-div">
+
+                        <div class="in-char-root-ltop-div">
+                          <div class="in-char-root-lt-left-div">
+                            <div class="title-div title-div-back-div">
+                              <div class="back-div">
+                                <a href="in_call.html" class="btn btn-back-auth"><span class="material-icons"> navigate_before </span></a>
+                              </div>
+                              <h2>Group Video Conference</h2>
+                            </div>
+                          </div>
+                          <div class="in-char-root-lt-right-div">
+                            <div class="btn-nav-list-div">
+                              <ul class="btn-nav-list-ul">
+                                <li class="btn-nav-items">
+                                  <a href="#" class="btn btn-common-secondary btn-icon"> 
+                                    <span class="bg-custom-icon settings-icon"></span>
+                                  </a>
+                                </li>
+                                <li class="btn-nav-items">
+                                  <a href="#" class="btn btn-common-secondary btn-icon"> 
+                                    <span class="bg-custom-icon full-screen-selector-icon"></span> 
+                                  </a>
+                                </li>
+                                <li class="btn-nav-items">
+                                  <a href="#" class="btn btn-common-secondary btn-icon active" id="button-icon-click-active1"> 
+                                    <span class="bg-custom-icon video-camera-icon icon-view"></span> 
+                                    <span class="bg-custom-icon no-video-camera-icon2 icon-none"></span> 
+                                  </a>
+                                </li>
+                                <li class="btn-nav-items">
+                                  <a href="#" class="btn btn-common-secondary btn-icon" id="button-icon-click-active2"> 
+                                    <span class="bg-custom-icon microphone-icon icon-view"></span> 
+                                    <span class="bg-custom-icon un-mute-white-microphone-icon icon-none"></span> 
+                                  </a>
+                                </li>
+                                
+                                <li class="btn-nav-items">
+                                  <div class="btn-nav-items-volume-group-rt">
+                                    <a href="#" class="btn btn-common-secondary btn-icon dropdown-toggle" id="volume-btn" data-toggle="dropdown"> 
+                                      <span class="bg-custom-icon volume-icon"></span>
+                                    </a>
+                                    <div class="dropdown-menu volume-btn-dropdown-menu">
+                                      <div class="volume-group-dropdown">
+                                        <div class="audio-group">
+                                          <button class="btn-volumn-icon"> <span class="bg-custom-icon volume-high-black-icon"></span> </button>
+                                          <div class="range-slider-custom">
+                                            <input type="range" class="slider" />
+                                          </div>
+                                          <button class="btn-volumn-icon"> <span class="bg-custom-icon volume-low-black-icon"></span> </button>
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </li>
+
+                                <li class="btn-nav-items btn-nav-items-width-100">
+                                  <button type="button" class="btn btn-primary btn-common-danger">
+                                    <span class="icon-span mr-2"> <span class="bg-custom-icon telephone-button"></span> </span>
+                                    <span class="text-span mr-6px"> Leave </span>
+                                  </button>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="in-char-root-lbody-div">
+
+                          <div class="row mlr-20 row-cm-20">
+                            <div class="col-lg-6 col-md-6 col-cm-20 plr-20">
+
+                              <div class="group-video-bx-card active-in">
+                                <div class="group-video-bx-inner-card">
+                                  <div class="tpl-group-video-bx">
+                                    <div class="in-call-group-uc-row">
+                                      <div class="in-call-group-uc-left">
+                                        <img src="assets/images/profile.jpg" class="img-fluid" alt="img" />
+                                      </div>
+                                      <div class="in-call-group-uc-right">
+                                        <p>Certis Digital EBC (Host)</p>
+                                        <a href="#" class="btn-audio">
+                                          <span class="bg-custom-icon microphone-icon"></span>
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="tb-group-video-bx">
+                                    <div class="in-call-group-user-thumb">
+                                      <div class="img-div">
+                                        <div class="img-thumb"> 
+                                          <img src="assets/images/profile.jpg" class="img-fluid img-responsive" alt="image">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-cm-20 plr-20">
+
+                              <div class="group-video-bx-card active">
+                                <div class="group-video-bx-inner-card">
+                                  <div class="tpl-group-video-bx">
+                                    <div class="in-call-group-uc-row">
+                                      <div class="in-call-group-uc-left">
+                                        <img src="assets/images/chat/img-01.jpg" class="img-fluid" alt="img" />
+                                      </div>
+                                      <div class="in-call-group-uc-right">
+                                        <p>Tristan Lapel</p>
+                                        <a href="#" class="btn-audio">
+                                          <span class="bg-custom-icon microphone-icon"></span>
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="tb-group-video-bx">
+                                    <div class="in-call-group-user-thumb">
+                                      <div class="img-div">
+                                        <div class="img-thumb"> 
+                                          <img src="assets/images/chat/img-01.jpg" class="img-fluid img-responsive" alt="image">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-cm-20 plr-20">
+
+                              <div class="group-video-bx-card active active-in">
+                                <div class="group-video-bx-inner-card">
+                                  <div class="tpl-group-video-bx">
+                                    <div class="in-call-group-uc-row">
+                                      <div class="in-call-group-uc-left">
+                                        <img src="assets/images/profile.jpg" class="img-fluid" alt="img" />
+                                      </div>
+                                      <div class="in-call-group-uc-right">
+                                        <p>Peter McConnor</p>
+                                        <a href="#" class="btn-audio">
+                                          <span class="bg-custom-icon microphone-icon"></span>
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="tb-group-video-bx">
+                                    <div class="in-call-group-user-thumb">
+                                      <div class="img-div">
+                                        <div class="img-thumb"> 
+                                          <img src="assets/images/profile.jpg" class="img-fluid img-responsive" alt="image">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-cm-20 plr-20">
+
+                              <div class="group-video-bx-card">
+                                <div class="group-video-bx-inner-card">
+                                  <div class="tpl-group-video-bx">
+                                    <div class="in-call-group-uc-row">
+                                      <div class="in-call-group-uc-left">
+                                        <img src="assets/images/chat/img-02.jpg" class="img-fluid" alt="img" />
+                                      </div>
+                                      <div class="in-call-group-uc-right">
+                                        <p>Anushka Kapoor</p>
+                                        <a href="#" class="btn-audio">
+                                          <span class="bg-custom-icon un-mute-microphone-icon"></span>
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="tb-group-video-bx">
+                                    <div class="in-call-group-user-thumb">
+                                      <div class="img-div">
+                                        <div class="img-thumb"> 
+                                          <img src="assets/images/chat/img-02.jpg" class="img-fluid img-responsive" alt="image">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-cm-20 plr-20">
+
+                              <div class="group-video-bx-card">
+                                <div class="group-video-bx-inner-card">
+                                  <div class="tpl-group-video-bx">
+                                    <div class="in-call-group-uc-row">
+                                      <div class="in-call-group-uc-left">
+                                        <img src="assets/images/chat/img-03.jpg" class="img-fluid" alt="img" />
+                                      </div>
+                                      <div class="in-call-group-uc-right">
+                                        <p>Jeremy Fischer</p>
+                                        <a href="#" class="btn-audio">
+                                          <span class="bg-custom-icon microphone-icon"></span>
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="tb-group-video-bx">
+                                    <div class="in-call-group-user-thumb">
+                                      <div class="img-div">
+                                        <div class="img-thumb"> 
+                                          <img src="assets/images/chat/img-03.jpg" class="img-fluid img-responsive" alt="image">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+
+                            <div class="col-lg-6 col-md-6 col-cm-20 plr-20">
+
+                              <div class="group-video-bx-card ">
+                                <div class="group-video-bx-inner-card">
+                                  <div class="tpl-group-video-bx">
+                                    <div class="in-call-group-uc-row">
+                                      <div class="in-call-group-uc-left">
+                                        <img src="assets/images/chat/img-04.jpg" class="img-fluid" alt="img" />
+                                      </div>
+                                      <div class="in-call-group-uc-right">
+                                        <p>Lillian Koh</p>
+                                        <a href="#" class="btn-audio">
+                                          <span class="bg-custom-icon microphone-icon"></span>
+                                        </a>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="tb-group-video-bx">
+                                    <div class="in-call-group-user-thumb">
+                                      <div class="img-div">
+                                        <div class="img-thumb"> 
+                                          <img src="assets/images/chat/img-04.jpg" class="img-fluid img-responsive" alt="image">
+                                        </div>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                            </div>
+                          </div>
+
+                        </div>
+
+                      </div>
+
+                      <div class="in-chat-root-area-right-div">
+                        <div class="in-chat-mp-card-div" id="in-chat-mp-card-div">
+
+                          <div class="collpse-mobile-div">
+                            <button class="btn btn-collpse-cst" id="onclick-group-chat-open">
+                              <span class="bg-custom-icon chevron-right-next-icon"></span>
+                            </button>
+                          </div>
+
+                          <div class="in-chat-mp-top-div">
+                            <div class="in-chat-mp-top-left-div">
+                              <h2>Group Chat</h2>
+                            </div>
+                            <div class="in-chat-mp-top-right-div">
+                              <div class="in-chat-mp-btn-group-div">
+                                <ul class="nav nav-tabs">
+                                  <li class="nav-item">
+                                    <a class="nav-link active" data-toggle="tab" href="#messages-tab">Messages</a>
+                                  </li>
+                                  <li class="nav-item">
+                                    <a class="nav-link" data-toggle="tab" href="#participants-tab">Participants</a>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+
+                          <div class="in-chat-mp-body-div" id="in-chat-mp-body-div">
+                            <div class="tab-content">
+                              <div class="tab-pane active" id="messages-tab">
+                                <div class="in-chat-mp-body-inner-div">
+
+                                  <div class="card chat-box" id="chatbox">
+                                    <div class="card-body chat-content">
+        
+                                      <div class="card-body-row">
+        
+                                        <div class="chat-item chat-left">
+                                          <div class="user-img-thumb">
+                                            <img src="assets/images/profile.jpg" class="img-fluid img-user" />
+                                          </div>
+                                          <div class="chat-details">
+                                            <div class="chat-user">Kathy Turnstone</div>
+                                            <div class="chat-text">
+                                              <div class="chat-text-inner">
+                                                <span class="text">I have a question</span>
+                                              </div>
+                                            </div> </br>
+                                          </div>
+                                        </div>
+        
+                                        <div class="chat-item chat-right">
+                                          <div class="chat-details w-100">
+                                            <div class="chat-user">You</div>
+                                            <div class="chat-text">
+                                              <div class="chat-text-inner">
+                                                <span class="text">Yes, Kathy? Is it about the finance forecast</span>
+                                              </div>
+                                            </div> </br>
+                                          </div>
+                                        </div>
+
+                                        <div class="chat-item chat-left">
+                                          <div class="user-img-thumb">
+                                            <img src="assets/images/profile.png" class="img-fluid img-user" />
+                                          </div>
+                                          <div class="chat-details">
+                                            <div class="chat-user">Jeremy Fischer</div>
+                                            <div class="chat-text">
+                                              <div class="chat-text-inner">
+                                                <span class="text">Oh yes, same here too.</span>
+                                              </div>
+                                            </div> </br>
+                                          </div>
+                                        </div>
+        
+                                        <div class="chat-row-new-join">
+                                          <div class="nj-chat-details">
+                                            <div class="nj-img-thumb">
+                                              <img src="assets/images/profile.png" class="img-fluid img-user" />
+                                            </div>
+                                            <div class="nj-chat-user"> <span class="text">Trevor Moley just joined the call</span> </div>
+                                          </div>
+                                        </div>
+
+                                        <div class="chat-item chat-left">
+                                          <div class="user-img-thumb">
+                                            <img src="assets/images/profile.png" class="img-fluid img-user" />
+                                          </div>
+                                          <div class="chat-details">
+                                            <div class="chat-user">Trevor Young</div>
+                                            <div class="chat-text">
+                                              <div class="chat-file-inner">
+                                                <a href="#" class="chat-file-inner-row">
+                                                  <div class="chat-file-inner-left">
+                                                    <h4>Final.ppt</h4>
+                                                    <p>43.8mb</p>
+                                                  </div>
+                                                  <div class="chat-file-inner-right">
+                                                    <span class="file-icon-bx">
+                                                      <span class="bg-custom-icon paperclip-icon02"></span>
+                                                    </span>
+                                                  </div>
+                                                </a>
+                                              </div>
+                                            </div> </br>
+                                          </div>
+                                        </div>
+
+                                        <div class="chat-item chat-right">
+                                          <div class="chat-details">
+                                            <div class="chat-user">You</div>
+                                            <div class="chat-text w-100">
+                                              <div class="chat-file-inner">
+                                                <a href="#" class="chat-file-inner-row">
+                                                  <div class="chat-file-inner-right">
+                                                    <span class="file-icon-bx">
+                                                      <span class="bg-custom-icon paperclip-icon03"></span>
+                                                    </span>
+                                                  </div>
+                                                  <div class="chat-file-inner-left">
+                                                    <h4>Marketing_Presentation.pdf</h4>
+                                                    <p>18.8mb</p>
+                                                  </div>
+                                                </a>
+                                              </div>
+                                            </div> </br>
+                                          </div>
+                                        </div>
+
+                                      </div>
+        
+                                    </div>
+                                    <div class="card-footer chat-form">
+
+                                      <div class="top-typying-div">
+                                        <div class="top-typying-row-div">
+                                          <div class="top-typying-left-div">
+                                            <span class="round-bx">
+                                              <span class="dot dot1"></span>
+                                              <span class="dot dot2"></span>
+                                              <span class="dot dot3"></span>
+                                            </span>  
+                                          </div>
+                                          <div class="top-typying-right-div">
+                                            <p>Martin Tan is typing…</p>
+                                          </div>
+                                        </div>
+                                      </div>
+
+                                      <div class="card-footer-row">
+                                        <form class="card-form" id="chat-form">
+                                          <div class="left-file-div">
+                                            <div class="file-group-div">
+                                              <input type="file" id="chat-file-select" class="input-file d-none" />
+                                              <label for="chat-file-select"> <span class="bg-custom-icon paperclip-icon"></span> </label>
+                                            </div>
+                                          </div>
+                                          <textarea class="form-control" placeholder="Write a message"></textarea>
+                                          <div class="btn-file-div">
+                                            <button class="btn btn-primary">
+                                              <span class="bg-custom-icon send-button-icon"></span>
+                                            </button>
+                                          </div>
+                                          
+                                        </form>
+                                      </div>
+                                    </div>
+                                  </div>
+
+                                </div>
+                              </div>
+
+                              <div class="tab-pane " id="participants-tab">
+
+                                <div class="in-chat-participants-root-div">
+                                  <div class="in-chat-participants-inner-div">
+                                    <div class="participent-list-main">
+                                      <div class="participent-list">
+                                        <ul class="list">
+                                          <li>
+                                            <div class="partcipent-user">
+                                              <div class="user-img">
+                                                <img src="assets/images/profile.jpg" class="img-fluid" alt="img" />
+                                              </div>
+                                              <div class="user-info">
+                                                <h3>Helena Carter</h3>
+                                                <p>Helena@certis.sg</p>
+                                              </div>
+                                            </div>
+
+                                            <div class="pr-user-right-text-div">
+                                              <h2>Host</h2>
+                                            </div>
+                                          </li>
+                      
+                                          <li>
+                                            <div class="partcipent-user">
+                                              <div class="user-img">
+                                                <img src="assets/images/profile.jpg" class="img-fluid" alt="img" />
+                                              </div>
+                                              <div class="user-info">
+                                                <h3>Rheneay Tristan</h3>
+                                                <p>Rheneay@certis.sg</p>
+                                              </div>
+                                            </div>
+                      
+                                            <div class="user-action">
+                                              <div class="action-group hover-none">
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-mic"></i></a>
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-video-mute"></i></a>
+                                              </div>
+                      
+                                              <div class="action-group hover-block">
+                                                <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                                            
+                                                <div class="dropdown">
+                                                  <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  More
+                                                  </button>
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Stop Video</a>
+                                                    
+                                                    <a class="dropdown-item" href="#">Remove from Call</a>
+                                                  </div>
+                                                </div>
+                      
+                                              </div>
+                                            </div>
+                                          </li>
+                      
+                                          <li>
+                                            <div class="partcipent-user">
+                                              <div class="user-img">
+                                                <img src="assets/images/profile.jpg" class="img-fluid" alt="img" />
+                                              </div>
+                                              <div class="user-info">
+                                                <h3>Heidi Shontell</h3>
+                                                <p>Heidi@certis.sg</p>
+                                              </div>
+                                            </div>
+                      
+                                            <div class="user-action">
+                                              <div class="action-group hover-none">
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-mic"></i></a>
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                                              </div>
+                      
+                                              <div class="action-group hover-block">
+                                                <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                                            
+                                                <div class="dropdown">
+                                                  <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  More
+                                                  </button>
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Stop Video</a>
+                                                    
+                                                    <a class="dropdown-item" href="#">Remove from Call</a>
+                                                  </div>
+                                                </div>
+                      
+                                              </div>
+                                            </div>
+                                          </li>
+                      
+                                          <li>
+                                            <div class="partcipent-user">
+                                              <div class="user-img">
+                                                <img src="assets/images/profile.jpg" class="img-fluid" alt="img" />
+                                              </div>
+                                              <div class="user-info">
+                                                <h3>John Bloom </h3>
+                                                <p>John@certis.sg</p>
+                                              </div>
+                                            </div>
+                      
+                                            <div class="user-action">
+                                              <div class="action-group hover-none">
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-mic"></i></a>
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                                              </div>
+                      
+                                              <div class="action-group hover-block">
+                                                <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                                            
+                                                <div class="dropdown">
+                                                  <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  More
+                                                  </button>
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Stop Video</a>
+                                                    
+                                                    <a class="dropdown-item" href="#">Remove from Call</a>
+                                                  </div>
+                                                </div>
+                      
+                                              </div>
+                                            </div>
+                                          </li>
+
+                                          <li>
+                                            <div class="partcipent-user">
+                                              <div class="user-img">
+                                                <img src="assets/images/profile.jpg" class="img-fluid" alt="img" />
+                                              </div>
+                                              <div class="user-info">
+                                                <h3>Helena Carter</h3>
+                                                <p>Helena@certis.sg</p>
+                                              </div>
+                                            </div>
+                      
+                                            <div class="user-action">
+                                              <div class="action-group hover-none">
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-mic-mute"></i></a>
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                                              </div>
+                      
+                                              <div class="action-group hover-block">
+                                                <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                                            
+                                                <div class="dropdown">
+                                                  <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  More
+                                                  </button>
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Stop Video</a>
+                                                    <a class="dropdown-item" href="#">Remove from Call</a>
+                                                  </div>
+                                                </div>
+                      
+                                              </div>
+                                            </div>
+                                          </li>
+                      
+                                          <li>
+                                            <div class="partcipent-user">
+                                              <div class="user-img">
+                                                <img src="assets/images/profile.jpg" class="img-fluid" alt="img" />
+                                              </div>
+                                              <div class="user-info">
+                                                <h3>Rheneay Tristan</h3>
+                                                <p>Rheneay@certis.sg</p>
+                                              </div>
+                                            </div>
+                      
+                                            <div class="user-action">
+                                              <div class="action-group hover-none">
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-mic"></i></a>
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-video-mute"></i></a>
+                                              </div>
+                      
+                                              <div class="action-group hover-block">
+                                                <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                                            
+                                                <div class="dropdown">
+                                                  <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  More
+                                                  </button>
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Stop Video</a>
+                                                    
+                                                    <a class="dropdown-item" href="#">Remove from Call</a>
+                                                  </div>
+                                                </div>
+                      
+                                              </div>
+                                            </div>
+                                          </li>
+                      
+                                          <li>
+                                            <div class="partcipent-user">
+                                              <div class="user-img">
+                                                <img src="assets/images/profile.jpg" class="img-fluid" alt="img" />
+                                              </div>
+                                              <div class="user-info">
+                                                <h3>Heidi Shontell</h3>
+                                                <p>Heidi@certis.sg</p>
+                                              </div>
+                                            </div>
+                      
+                                            <div class="user-action">
+                                              <div class="action-group hover-none">
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-mic"></i></a>
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                                              </div>
+                      
+                                              <div class="action-group hover-block">
+                                                <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                                            
+                                                <div class="dropdown">
+                                                  <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  More
+                                                  </button>
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Stop Video</a>
+                                                    
+                                                    <a class="dropdown-item" href="#">Remove from Call</a>
+                                                  </div>
+                                                </div>
+                      
+                                              </div>
+                                            </div>
+                                          </li>
+                      
+                                          <li>
+                                            <div class="partcipent-user">
+                                              <div class="user-img">
+                                                <img src="assets/images/profile.jpg" class="img-fluid" alt="img" />
+                                              </div>
+                                              <div class="user-info">
+                                                <h3>John Bloom </h3>
+                                                <p>John@certis.sg</p>
+                                              </div>
+                                            </div>
+                      
+                                            <div class="user-action">
+                                              <div class="action-group hover-none">
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-mic"></i></a>
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                                              </div>
+                      
+                                              <div class="action-group hover-block">
+                                                <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                                            
+                                                <div class="dropdown">
+                                                  <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  More
+                                                  </button>
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Stop Video</a>
+                                                    
+                                                    <a class="dropdown-item" href="#">Remove from Call</a>
+                                                  </div>
+                                                </div>
+                      
+                                              </div>
+                                            </div>
+                                          </li>
+
+                                          <li>
+                                            <div class="partcipent-user">
+                                              <div class="user-img">
+                                                <img src="assets/images/profile.jpg" class="img-fluid" alt="img" />
+                                              </div>
+                                              <div class="user-info">
+                                                <h3>Helena Carter</h3>
+                                                <p>Helena@certis.sg</p>
+                                              </div>
+                                            </div>
+                      
+                                            <div class="user-action">
+                                              <div class="action-group hover-none">
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-mic-mute"></i></a>
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                                              </div>
+                      
+                                              <div class="action-group hover-block">
+                                                <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                                            
+                                                <div class="dropdown">
+                                                  <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  More
+                                                  </button>
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Stop Video</a>
+                                                    <a class="dropdown-item" href="#">Remove from Call</a>
+                                                  </div>
+                                                </div>
+                      
+                                              </div>
+                                            </div>
+                                          </li>
+                      
+                                          <li>
+                                            <div class="partcipent-user">
+                                              <div class="user-img">
+                                                <img src="assets/images/profile.jpg" class="img-fluid" alt="img" />
+                                              </div>
+                                              <div class="user-info">
+                                                <h3>Rheneay Tristan</h3>
+                                                <p>Rheneay@certis.sg</p>
+                                              </div>
+                                            </div>
+                      
+                                            <div class="user-action">
+                                              <div class="action-group hover-none">
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-mic"></i></a>
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-video-mute"></i></a>
+                                              </div>
+                      
+                                              <div class="action-group hover-block">
+                                                <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                                            
+                                                <div class="dropdown">
+                                                  <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  More
+                                                  </button>
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Stop Video</a>
+                                                    
+                                                    <a class="dropdown-item" href="#">Remove from Call</a>
+                                                  </div>
+                                                </div>
+                      
+                                              </div>
+                                            </div>
+                                          </li>
+                      
+                                          <li>
+                                            <div class="partcipent-user">
+                                              <div class="user-img">
+                                                <img src="assets/images/profile.jpg" class="img-fluid" alt="img" />
+                                              </div>
+                                              <div class="user-info">
+                                                <h3>Heidi Shontell</h3>
+                                                <p>Heidi@certis.sg</p>
+                                              </div>
+                                            </div>
+                      
+                                            <div class="user-action">
+                                              <div class="action-group hover-none">
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-mic"></i></a>
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                                              </div>
+                      
+                                              <div class="action-group hover-block">
+                                                <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                                            
+                                                <div class="dropdown">
+                                                  <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  More
+                                                  </button>
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Stop Video</a>
+                                                    
+                                                    <a class="dropdown-item" href="#">Remove from Call</a>
+                                                  </div>
+                                                </div>
+                      
+                                              </div>
+                                            </div>
+                                          </li>
+                      
+                                          <li>
+                                            <div class="partcipent-user">
+                                              <div class="user-img">
+                                                <img src="assets/images/profile.jpg" class="img-fluid" alt="img" />
+                                              </div>
+                                              <div class="user-info">
+                                                <h3>John Bloom </h3>
+                                                <p>John@certis.sg</p>
+                                              </div>
+                                            </div>
+                      
+                                            <div class="user-action">
+                                              <div class="action-group hover-none">
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-mic"></i></a>
+                                                  <a href="#" class="btn btn-squre"><i class="icon icon-video"></i></a>
+                                              </div>
+                      
+                                              <div class="action-group hover-block">
+                                                <a href="#" class="btn btn-custom btn-xs btn-blue" id="mute">Mute</a>
+                                            
+                                                <div class="dropdown">
+                                                  <button class="btn btn-custom btn-xs btn-transparent dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                  More
+                                                  </button>
+                                                  <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                                    <a class="dropdown-item" href="#">Stop Video</a>
+                                                    
+                                                    <a class="dropdown-item" href="#">Remove from Call</a>
+                                                  </div>
+                                                </div>
+                      
+                                              </div>
+                                            </div>
+                                          </li>
+                      
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+
+                              </div> 
+
+                            </div>
+                          </div>
+                          
+                        </div>
+                      </div>
+
+                    </div>
+                  </section>
+                  
+                </div>  
+              </div>        
+            </div>
+          </div>
+        </div><!--  end of main  -->
+
+    </div>
+  </main>
+
+</div><!-- end of wrapper -->
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/popper.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/owl.carousel.min.js"></script>
+<script src="assets/js/search-dropdown.js"></script>
+<script src="assets/js/custom.js"></script>
+
+<script>
+  $(document).ready(function () {
+    for(let bi = 0; bi < 5; bi++)  {
+      $(".btn-nav-list-div .btn-nav-list-ul #button-icon-click-active"+ bi).click(function() {
+        $(this).toggleClass("active");
+      });
+    }
+    
+    $('.dropdown-menu.dropdown-menu-custom').on('click', function(event){
+      event.stopPropagation();
+    });
+
+    $("#onclick-group-chat-open").click(function() {
+      $("#in-chat-mp-body-div").toggleClass("active");
+      $("#in-chat-mp-card-div").toggleClass("active");
+      
+    });
+    
+  });
+</script>
+
+</body>
+</html>

@@ -395,6 +395,20 @@
           filter: none;
         }
       }
+
+      &.active-white {
+        .in-call-user-slider-img-thumb {
+          border-color: #fff;
+        }
+
+        .in-call-user-slider-content-div {
+          background: inherit;
+
+          &::before {
+            background: inherit;
+          }
+        }
+      }
     }
 
     &.active-in {
@@ -450,12 +464,15 @@
 
       .img-logo-action {
         object-fit: contain;
+        width: 140px;
+        height: 42px;
+        object-position: center;
       }
     }
 
     .in-call-action-area-right {
       width: calc(100% - 200px);
-      padding: 0 0 0 30px;
+      padding: 0 0 0 20px;
     }
   }
 
@@ -507,6 +524,52 @@
 
       &.btn-common-primary {
         min-height: 46px;
+
+        &::before {
+          content: "";
+          background: transparent linear-gradient(109deg, #b9610e 0%, #f78c26 100%);
+          border-radius: 60px;
+          opacity: 0.6;
+          filter: blur(3px);
+          width: calc(100% - 16px);
+          position: absolute;
+          bottom: -5px;
+          height: 37px;
+          left: 8px;
+          z-index: -1;
+        }
+      }
+
+      &.btn-common-secondary:not(.dropdown-toggle) {
+        &::before {
+          content: "";
+          background: transparent linear-gradient(100deg, #1859b2 0%, #1e8ee0 100%);
+          border-radius: 60px;
+          opacity: 0.6;
+          filter: blur(3px);
+          width: calc(100% - 28px);
+          position: absolute;
+          bottom: -5px;
+          height: 37px;
+          left: 14px;
+          z-index: -1;
+        }
+      }
+
+      &.btn-common-danger {
+        &::before {
+          content: "";
+          background: transparent linear-gradient(107deg, #f97576 0%, #ff223b 100%);
+          border-radius: 60px;
+          opacity: 0.6;
+          filter: blur(3px);
+          width: calc(100% - 14px);
+          position: absolute;
+          bottom: -5px;
+          height: 37px;
+          left: 7px;
+          z-index: -1;
+        }
       }
 
       .icon-span {
@@ -545,7 +608,33 @@
     }
 
     .dropup-custom {
+      &.btnshadow-drop {
+        position: relative;
+
+        &::before {
+          content: "";
+          background: transparent linear-gradient(100deg, #1859b2 0%, #1e8ee0 100%);
+          border-radius: 60px;
+          opacity: 0.6;
+          filter: blur(3px);
+          width: calc(100% - 28px);
+          position: absolute;
+          bottom: -5px;
+          height: 37px;
+          left: 14px;
+          z-index: -1;
+        }
+
+        &.show > .btn-primary.dropdown-toggle:focus {
+          &:focus {
+            box-shadow: none;
+          }
+        }
+      }
+
       .btn.btn-common-secondary {
+        position: relative;
+
         &.dropdown-toggle {
           padding: 7px 36px 7px 20px;
 
