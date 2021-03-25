@@ -2822,4 +2822,34 @@
     padding: 5px 15px;
   }
 }
+
+@media (min-width: 470px) and (max-width: 1024px) and (max-height: 500px) and (orientation: landscape) {
+  .in-chat-mp-card-div {
+    border-radius: 30px 30px 0 0;
+  }
+  .in-chat-mp-card-div .in-chat-mp-body-div {
+    min-height: calc(100vh - 90px);
+  }
+  .in-chat-mp-card-div .chat-box {
+    height: calc(100vh - 90px);
+  }
+  .in-chat-mp-card-div .chat-box .card-footer {
+    padding: 10px 20px 10px 20px;
+  }
+  .in-chat-mp-card-div .in-chat-mp-top-div {
+    padding: 30px 20px 15px 20px;
+  }
+  .in-chat-mp-card-div.active .in-chat-mp-top-div {
+    padding-bottom: 10px;
+  }
+  .in-chat-mp-card-div .chat-box .card-body {
+    padding: 10px 10px 0 10px;
+  }
+  .in-chat-mp-card-div .chat-box .card-footer .top-typying-div .top-typying-row-div {
+    margin: 0 0 10px 0;
+  }
+  .in-chat-participants-root-div .participent-list-main {
+    max-height: calc(100vh - 114px);
+  }
+}
 /*# sourceMappingURL=chat-style.css.map */
