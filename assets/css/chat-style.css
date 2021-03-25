@@ -2139,6 +2139,10 @@
             justify-content: center;
     position: relative;
     z-index: 99;
+    background: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: none;
   }
   .in-chat-mp-card-div .collpse-mobile-div .btn.btn-collpse-cst .chevron-right-next-icon {
     width: 28px;
@@ -2565,6 +2569,10 @@
             justify-content: center;
     position: relative;
     z-index: 99;
+    background: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    border: none;
   }
   .in-chat-mp-card-div .collpse-mobile-div .btn.btn-collpse-cst .chevron-right-next-icon {
     width: 28px;
