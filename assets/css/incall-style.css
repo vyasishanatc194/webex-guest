@@ -796,12 +796,12 @@
 }
 
 .in-call-action-area-div .btn-group-root .dropup-custom .btn.btn-common-secondary.dropdown-toggle::before {
-  content: "";
   border-left: 1px solid #ffffff1a;
   position: absolute;
   right: 32px;
   top: 0;
   min-height: inherit;
+  opacity: 0;
 }
 
 .in-call-action-area-div .btn-group-root .dropup-custom .btn.btn-common-secondary.dropdown-toggle::after {
@@ -811,7 +811,6 @@
   min-height: inherit;
   width: 34px;
   border: none;
-  content: "\e313";
   font-family: "Material Icons";
   font-weight: normal;
   font-style: normal;
@@ -824,7 +823,6 @@
   -webkit-font-feature-settings: "liga";
   -webkit-font-smoothing: antialiased;
   color: #fff;
-  opacity: 1;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -837,6 +835,7 @@
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
   margin: 0;
+  opacity: 0;
 }
 
 .in-call-action-area-div .btn-group-root .dropup-custom .btn.btn-common-secondary.dropdown-toggle .text-span {
@@ -861,7 +860,36 @@
   max-width: calc(100% - 30px);
 }
 
-.in-call-action-area-div .btn-group-root .dropup-custom.show .btn.btn-common-secondary.dropdown-toggle::after {
+.in-call-action-area-div .btn-group-root .dropup-custom .btn.btn-common-secondary.dropdown-toggle .dropdown-arrow-span {
+  border: none;
+  border-left: 1px solid #ffffff1a;
+  position: absolute;
+  right: 0;
+  top: 0;
+  min-height: inherit;
+  width: 34px;
+  font-size: 24px;
+  color: #fff;
+  opacity: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0;
+}
+
+.in-call-action-area-div .btn-group-root .dropup-custom .btn.btn-common-secondary.dropdown-toggle .dropdown-arrow-span .material-icons {
+  font-size: inherit;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.in-call-action-area-div .btn-group-root .dropup-custom.show .btn.btn-common-secondary.dropdown-toggle .dropdown-arrow-span .material-icons {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
 }

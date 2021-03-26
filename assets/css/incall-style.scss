@@ -639,12 +639,13 @@
           padding: 7px 36px 7px 20px;
 
           &::before {
-            content: "";
+            // content: "";
             border-left: 1px solid #ffffff1a;
             position: absolute;
             right: 32px;
             top: 0;
             min-height: inherit;
+            opacity: 0;
           }
 
           &::after {
@@ -654,7 +655,7 @@
             min-height: inherit;
             width: 34px;
             border: none;
-            content: "\e313";
+            // content: "\e313";
             font-family: "Material Icons";
             font-weight: normal;
             font-style: normal;
@@ -667,12 +668,12 @@
             -webkit-font-feature-settings: "liga";
             -webkit-font-smoothing: antialiased;
             color: #fff;
-            opacity: 1;
             display: flex;
             align-items: center;
             justify-content: center;
             transform: rotate(180deg);
             margin: 0;
+            opacity: 0;
           }
 
           .text-span {
@@ -696,12 +697,39 @@
               max-width: calc(100% - 30px);
             }
           }
+
+          // new drop arrow
+          .dropdown-arrow-span {
+            border: none;
+            border-left: 1px solid #ffffff1a;
+            position: absolute;
+            right: 0;
+            top: 0;
+            min-height: inherit;
+            width: 34px;
+            font-size: 24px;
+            color: #fff;
+            opacity: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0;
+
+            .material-icons {
+              font-size: inherit;
+              transform: rotate(180deg);
+            }
+          }
         }
       }
 
       &.show {
-        .btn.btn-common-secondary.dropdown-toggle::after {
-          transform: rotate(0deg);
+        .btn.btn-common-secondary.dropdown-toggle {
+          .dropdown-arrow-span {
+            .material-icons {
+              transform: rotate(0deg);
+            }
+          }
         }
       }
 
