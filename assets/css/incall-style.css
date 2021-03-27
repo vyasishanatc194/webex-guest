@@ -1507,6 +1507,17 @@
     height: 14px;
     width: 14px;
   }
+  .volume-top-center-root {
+    top: 20px;
+    left: calc(50% - 152px);
+  }
+  .volume-top-center-root .volume-btn-dropdown-menu {
+    width: 100%;
+    min-width: 100%;
+  }
+  .volume-top-center-root .volume-btn-dropdown-menu .range-slider-custom .slider {
+    width: 200px !important;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {

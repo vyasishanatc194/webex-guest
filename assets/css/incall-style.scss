@@ -1385,6 +1385,20 @@
       }
     }
   }
+
+  .volume-top-center-root {
+    top: 20px;
+    left: calc(50% - 152px);
+
+    .volume-btn-dropdown-menu {
+      width: 100%;
+      min-width: 100%;
+
+      .range-slider-custom .slider {
+        width: 200px !important;
+      }
+    }
+  }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -2071,6 +2085,8 @@
         height: 24px;
       }
     }
+
+    
   }
 
   @media (min-width: 470px) and (max-width: 620px) and (max-height: 500px) and (orientation: landscape) {
