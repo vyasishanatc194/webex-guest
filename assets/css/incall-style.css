@@ -1570,6 +1570,9 @@
   .in-call-action-area-div .btn-group-root .more-sm-options-btn-item-li {
     display: inline-block;
   }
+  .in-call-action-area-div .btn-group-root .more-sm-options-btn-item-li .dropup-custom .btn.btn-common-secondary.dropdown-toggle.remove-arrow .text-span {
+    max-width: calc(100% - 38px);
+  }
   .in-call-action-area-div .btn-group-root .btn.btn-primary {
     padding: 5px 15px 5px 15px;
     font-size: 14px;
@@ -1791,6 +1794,9 @@
   }
   .in-call-action-area-div .btn-group-root .more-sm-options-btn-item-li {
     display: inline-block;
+  }
+  .in-call-action-area-div .btn-group-root .more-sm-options-btn-item-li .dropup-custom .btn.btn-common-secondary.dropdown-toggle.remove-arrow .text-span {
+    max-width: calc(100% - 38px);
   }
   .in-call-action-area-div .btn-group-root .btn.btn-primary {
     padding: 5px 15px 5px 15px;
@@ -2061,6 +2067,13 @@
   }
   .in-call-action-area-div .btn-group-root .btn.btn-primary {
     font-size: 14px;
+  }
+}
+
+@media (min-width: 500px) {
+  .in-call-action-area-div .btn-group-root ul.btn-group-list {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
 }
 
