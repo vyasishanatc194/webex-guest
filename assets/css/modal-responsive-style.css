@@ -426,6 +426,9 @@
     margin-top: 0;
     padding-top: 16px;
   }
+  .modal-seeting .modal-dialog .modal-content .modal-body .tab-inner.tab-inner-video {
+    margin-bottom: 12px;
+  }
   .select2-container .ContainerDropdownCustom-outside .select2-results__option {
     font-size: 16px;
     line-height: 20px;
