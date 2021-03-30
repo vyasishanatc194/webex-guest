@@ -43,6 +43,13 @@
   margin: 0 auto 10px auto;
 }
 
+@media (max-width: 767px) {
+  .modal-guest .modal-dialog {
+    margin: 0 auto;
+    padding: 0 0.5rem;
+  }
+}
+
 @media (max-width: 767px) and (orientation: portrait) {
   .modal-guest .modal-dialog .modal-content {
     border-radius: 15px;

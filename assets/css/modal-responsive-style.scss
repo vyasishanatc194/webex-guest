@@ -66,6 +66,13 @@
 @media (min-width: 1025px) and (max-width: 1450px) {
 }
 
+@media (max-width: 767px) {
+  .modal-guest .modal-dialog {
+    margin: 0 auto;
+    padding: 0 0.5rem;
+  }
+}
+
 // Mobile
 @media (max-width: 767px) and (orientation: portrait) {
   .modal-guest {
