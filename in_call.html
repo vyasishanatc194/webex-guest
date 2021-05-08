@@ -19,6 +19,9 @@
 <link href="assets/css/style.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/modal-style.css" media="all" rel="stylesheet" type="text/css" />
 <link href="assets/css/incall-style.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/chat-style.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/chat-incall-style.css" media="all" rel="stylesheet" type="text/css" />
+<link href="assets/css/chat-bx-style.css" media="all" rel="stylesheet" type="text/css" />
 <script src="assets/js/modernizr.js"></script>
 </head>
 
@@ -40,16 +43,196 @@
                   <section class="incall-area-section">
                     <div class="incall-area-div">
 
-                      <div class="in-call-video-bg-fixed-div">
+                      <div class="in-call-video-bg-fixed-div" id="in-call-video-bg-fixed-div">
                         <video class="in-call-video-bg" poster="assets/images/background/login_background_graphic.jpg" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
                           <source src="assets/images/background/bg_1.mp4" type="video/mp4">
                         </video>
                       </div>
 
+                      <div class="root-participant-div">
+                        <div class="root-participant-inner-div">
+  
+                          <div class="root-participant-left-div" id="main-big-screen-view-area">
+  
+                            <div class="part-list-root-div hidden-area">
+                              <img src="assets/images/participant_video_grid.jpg" alt="img" class="img-fluid imggroup-fluid" />
+                            </div>
+  
+                          </div>
+  
+                          <div class="root-participant-right-div">
+  
+                            <div class="main-desk-div hidden-area" id="main-small-screen-view-area">
+                              <div class="main-desk-row-div">
+                                <div class="main-desk-top-div">
+                                  <div class="main-right-action-control">
+                                    <ul class="control-group-btn-div">
+                                      <li><button id="minimize-screen-btn" class="btn btn-action-control mr-26"> <span class="minimize-span"></span> </button></li>
+                                      <li><button id="maximize-screen-btn" class="btn btn-action-control"> <span class="maximize-span"></span> </button></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                                <div class="main-desk-body-div">
+                                  <div class="thumb-div">
+                                    <video class="call-video-bg mx-100 hidden-area" id="small-screen-video-div" poster="assets/images/background/login_background_graphic.jpg" playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+                                      <source src="assets/images/background/bg_1.mp4" type="video/mp4">
+                                    </video>
+                                    <img id="small-screen-image" src="assets/images/participant_video_grid.jpg" alt="img" class="img-fluid img-responsive" />
+                                  </div>
+                                </div>
+                              </div>
+  
+                              <div class="main-desk-btn-row-div hidden-area" id="goto-presentor-view-area">
+                                <div class="main-desk-btn-group-div">
+  
+                                  <button id="goto-presentor-view-btn" type="button" class="btn btn-primary btn-common-secondary go-to-presentor-view-btn">
+                                    <span class="text-span"> Go to Presentor View </span>
+                                  </button>
+  
+                                </div>
+                              </div>
+                            </div>
+  
+                            <div class="chat-group-participant-div hidden-area" id="chat-group-participant-area">
+  
+                              <div class="in-chat-mp-card-div chat-part-card-bx-div" id="in-chat-mp-card-div">
+  
+                                <div class="collpse-mobile-div">
+                                  <button class="btn btn-collpse-cst" id="onclick-group-chat-open">
+                                    <span class="bg-custom-icon chevron-right-next-icon"></span>
+                                  </button>
+                                </div>
+      
+                                <div class="in-chat-mp-top-div">
+                                  <div class="in-chat-mp-top-left-div">
+                                    <div class="title-div title-div-back-div">
+                                      <div class="back-div hidden-area">
+                                        <a href="#" class="btn btn-back-auth remove-chat-group-btn"><span class="material-icons"> navigate_before </span></a>
+                                      </div>
+                                      <h2>Group Chat</h2>
+                                    </div>
+                                  </div>
+                                  <div class="in-chat-mp-top-right-div hidden-area">
+                                    <div class="btn-nav-list-div">
+                                      <ul class="btn-nav-list-ul">
+                                        <li class="btn-nav-items btn-nav-items-width-100">
+                                          <button type="button" class="btn btn-primary btn-common-danger">
+                                            <span class="icon-span mr-2"> <span class="bg-custom-icon telephone-button"></span> </span>
+                                            <span class="text-span mr-6px"> Leave </span>
+                                          </button>
+                                        </li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+      
+                                <div class="in-chat-mp-body-div" id="in-chat-mp-body-div">
+                                  <div class="tab-content">
+                                    <div class="tab-pane active" id="messages-tab">
+                                      <div class="in-chat-mp-body-inner-div">
+      
+                                        <div class="card chat-box" id="chatbox">
+                                          <div class="card-body chat-content">
+              
+                                            <div class="card-body-row">
+              
+                                              <div class="chat-item chat-left">
+                                                <div class="user-img-thumb">
+                                                  <img src="assets/images/profile.jpg" class="img-fluid img-user" />
+                                                </div>
+                                                <div class="chat-details">
+                                                  <div class="chat-user">Kathy Turnstone</div>
+                                                  <div class="chat-text">
+                                                    <div class="chat-text-inner">
+                                                      <span class="text">I have a question</span>
+                                                    </div>
+                                                  </div> </br>
+                                                </div>
+                                              </div>
+              
+                                              <div class="chat-item chat-right">
+                                                <div class="chat-details w-100">
+                                                  <div class="chat-user">You</div>
+                                                  <div class="chat-text">
+                                                    <div class="chat-text-inner">
+                                                      <span class="text">Yes, Kathy? Is it about the finance forecast</span>
+                                                    </div>
+                                                  </div> </br>
+                                                </div>
+                                              </div>
+      
+                                              <div class="chat-item chat-left">
+                                                <div class="user-img-thumb">
+                                                  <img src="assets/images/profile.png" class="img-fluid img-user" />
+                                                </div>
+                                                <div class="chat-details">
+                                                  <div class="chat-user">Jeremy Fischer</div>
+                                                  <div class="chat-text">
+                                                    <div class="chat-text-inner">
+                                                      <span class="text">Oh yes, same here too.</span>
+                                                    </div>
+                                                  </div> </br>
+                                                </div>
+                                              </div>
+                  
+                                            </div>
+              
+                                          </div>
+                                          <div class="card-footer chat-form">
+      
+                                            <div class="top-typying-div">
+                                              <div class="top-typying-row-div">
+                                                <div class="top-typying-left-div">
+                                                  <span class="round-bx">
+                                                    <span class="dot dot1"></span>
+                                                    <span class="dot dot2"></span>
+                                                    <span class="dot dot3"></span>
+                                                  </span>  
+                                                </div>
+                                                <div class="top-typying-right-div">
+                                                  <p>Martin Tan is typing…</p>
+                                                </div>
+                                              </div>
+                                            </div>
+      
+                                            <div class="card-footer-row">
+                                              <form class="card-form" id="chat-form">
+                                                <div class="left-file-div">
+                                                  <div class="file-group-div">
+                                                    <input type="file" id="chat-file-select" class="input-file d-none" />
+                                                    <label for="chat-file-select"> <span class="bg-custom-icon paperclip-icon"></span> </label>
+                                                  </div>
+                                                </div>
+                                                <textarea class="form-control" placeholder="Write a message"></textarea>
+                                                <div class="btn-file-div">
+                                                  <button class="btn btn-primary">
+                                                    <span class="bg-custom-icon send-button-icon"></span>
+                                                  </button>
+                                                </div>
+                                                
+                                              </form>
+                                            </div>
+                                          </div>
+                                        </div>
+      
+                                      </div>
+                                    </div>
+      
+                                  </div>
+                                </div>
+                                
+                              </div>
+  
+                            </div>
+  
+                          </div>
+  
+                        </div>
+                      </div>
 
                       <div class="in-call-area-root">
 
-                        <div class="in-call-area-top">
+                        <div class="in-call-area-top d-none">
                           <div class="in-call-area-top-center">
                             <div class="row">
                               <div class="col-lg-12 col-md-12">
@@ -220,6 +403,15 @@
                         </div>
 
                         <div class="in-call-area-body">
+
+                          <div class="right-fixed-btn-div" id="show-participants-btn-area">
+                            <div class="btn-r-div">
+                              <button class="btn btn-secondary-show" id="show-participants-btn">
+                                <span class="icon-span"> <span class="bg-custom-icon show-participants-icon"></span></span>
+                                <span class="text-span">Show Participants</span>
+                              </button>
+                            </div>
+                          </div>
                           
                           <div class="in-call-action-area-div">
                             <div class="in-call-action-area-row">
@@ -396,8 +588,8 @@
                                       </button>
                                     </li>
 
-                                    <li class="btn-item-li"> 
-                                      <button type="button" class="btn btn-primary btn-common-primary" onclick="location.href='chat.html';">
+                                    <li class="btn-item-li chat-btn-item-li disabled-list" id="disabled-list"> 
+                                      <button type="button" class="btn btn-primary btn-common-primary"  id="disabled-chat-btn">
                                         <span class="icon-span"> <span class="bg-custom-icon speech-bubble-icon"></span> </span>
                                         <span class="text-span mr-6px"> Chat </span>
                                       </button>
@@ -447,6 +639,7 @@
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/owl.carousel.min.js"></script>
 <script src="assets/js/search-dropdown.js"></script>
+<script src="assets/js/participant-new.js"></script>
 <script src="assets/js/custom.js"></script>
 
 <script>
