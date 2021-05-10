@@ -49,6 +49,44 @@
                         </video>
                       </div>
 
+                      <div class="tplf-share-screen-div new-tplf-share-screen-div d-none" id="new-tplf-screen-div">
+                        <div class="tplf-share-screen-inner">
+                         
+                          <div class="in-call-user-ss-box">
+                            <div class="in-call-user-ss-box-inner">
+                              <div class="in-call-user-ss-img-thumb">
+                                <div class="img-div">
+                                  <div class="img-thumb"> 
+                                    <img src="assets/images/user.jpg" class="img-fluid img-responsive" alt="image" />
+                                  </div>
+                                </div>
+                              </div>
+                              <div class="in-call-user-ss-content-div d-none">
+                                <div class="in-call-user-ss-content-row">
+                                  <p>Certis EBC</p>
+                                  <a href="#" class="btn-audio">
+                                    <span class="bg-custom-icon un-mute-microphone-icon"></span>
+                                  </a>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+  
+                        </div>    
+                      </div>
+
+                      <div class="in-call-center-user-fixed-div d-none">
+                        <div class="center-user-div">
+                          <div class="in-call-user-img-thumb active active-in">
+                            <div class="img-div">
+                              <div class="img-thumb"> 
+                                <img src="assets/images/profile.png" class="img-fluid img-responsive" alt="image">
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
                       <div class="root-participant-div">
                         <div class="root-participant-inner-div">
   
@@ -62,7 +100,7 @@
   
                           <div class="root-participant-right-div">
   
-                            <div class="main-desk-div hidden-area" id="main-small-screen-view-area">
+                            <div class="main-desk-div top-left-side-small-screen hidden-area" id="main-small-screen-view-area">
                               <div class="main-desk-row-div">
                                 <div class="main-desk-top-div">
                                   <div class="main-right-action-control">
@@ -78,6 +116,19 @@
                                       <source src="assets/images/background/bg_1.mp4" type="video/mp4">
                                     </video>
                                     <img id="small-screen-image" src="assets/images/participant_video_grid.jpg" alt="img" class="img-fluid img-responsive" />
+                                    
+                                    <div class="in-call-video-pause-img-div d-none"> <!-- Add "active" class for open this -->
+                                      <div class="center-user-div">
+                                        <div class="in-call-user-img-thumb active active-in">
+                                          <div class="img-div">
+                                            <div class="img-thumb"> 
+                                              <img id="small-screen-image" src="assets/images/user.jpg" class="img-fluid img-responsive" alt="image" />
+                                            </div>
+                                          </div>
+                                        </div>
+                                      </div>
+                                    </div>
+
                                   </div>
                                 </div>
                               </div>
@@ -556,7 +607,7 @@
                                               <div class="check-list-box">
                                                 <div class="custom-control custom-checkbox">
                                                   <input type="checkbox" class="custom-control-input" id="more-sm-check02-01" name="stp-video-select">
-                                                  <label class="custom-control-label" for="more-sm-check02-01">Show Participant Videos</label>
+                                                  <label class="custom-control-label" for="more-sm-check02-01">Hide My Video</label>
                                                 </div>
                                                 <div class="custom-control custom-checkbox">
                                                   <input type="checkbox" class="custom-control-input" id="more-sm-check02-02" name="stp-video-select">
@@ -564,7 +615,11 @@
                                                 </div>
                                                 <div class="custom-control custom-checkbox">
                                                   <input type="checkbox" class="custom-control-input" id="more-sm-check02-03" name="stp-video-select">
-                                                  <label class="custom-control-label" for="more-sm-check02-03">Go to Settings</label>
+                                                  <label class="custom-control-label" for="more-sm-check02-03">Go to Participant View</label>
+                                                </div>
+                                                <div class="custom-control custom-checkbox">
+                                                  <input type="checkbox" class="custom-control-input" id="more-sm-check02-04" name="stp-video-select">
+                                                  <label class="custom-control-label" for="more-sm-check02-04">Go to Settings</label>
                                                 </div>
                                               </div>
                                             </div>

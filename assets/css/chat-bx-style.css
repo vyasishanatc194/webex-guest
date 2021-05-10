@@ -615,12 +615,12 @@
     width: calc(100% + 40px);
   }
   .root-participant-div .root-participant-left-div {
-    width: calc(100% - 285px);
-    padding: 0 0 0 0;
+    width: calc(100% - 227px);
+    padding: 0 0 0 58px;
   }
   .root-participant-div .root-participant-right-div {
-    width: 285px;
-    padding: 8px 22px 0 27px;
+    width: 227px;
+    padding: 10px 15px 0 18px;
   }
   .root-participant-div .root-participant-inner-div {
     padding: 0;
@@ -652,14 +652,17 @@
   }
   .main-desk-div .main-desk-body-div {
     height: 132px;
+    border-radius: 5px;
   }
   .main-desk-div .main-desk-body-div .thumb-div .call-video-bg {
     height: 132px;
+    border-radius: 5px;
     -o-object-position: top;
        object-position: top;
   }
   .main-desk-div .main-desk-body-div .thumb-div .img-responsive {
     height: 132px;
+    border-radius: 5px;
     -o-object-position: top;
        object-position: top;
   }
@@ -668,11 +671,11 @@
   }
   .main-desk-div .btn.btn-primary.btn-common-secondary {
     border-radius: 60px;
-    font-size: 15px;
+    font-size: 14px;
     line-height: 18px;
-    padding: 7px 40px 7px 40px;
+    padding: 7px 30px 7px 30px;
     min-width: 100%;
-    min-height: 41px;
+    min-height: 38px;
     width: 100%;
   }
   .chat-group-participant-div.show-area {
@@ -852,6 +855,23 @@
   .in-chat-mp-card-div.chat-part-card-bx-div .chat-box .card-footer .card-footer-row .card-form .btn.btn-primary .send-button-icon {
     width: 18px;
     height: 18px;
+  }
+  .main-desk-div.top-left-side-small-screen {
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 13px 40px 20px 47px;
+    margin: 0;
+  }
+  .main-desk-div.top-left-side-small-screen .main-desk-body-div {
+    height: auto;
+  }
+  .main-desk-div.top-left-side-small-screen .main-desk-body-div .thumb-div .img-responsive {
+    width: 107px;
+    height: 79px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 5px;
   }
 }
 /*# sourceMappingURL=chat-bx-style.css.map */

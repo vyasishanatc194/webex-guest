@@ -1,3 +1,71 @@
+.in-call-user-ss-box .in-call-user-ss-img-thumb .img-div {
+  height: 100%;
+}
+
+.in-call-user-ss-box .in-call-user-ss-img-thumb .img-div .img-thumb {
+  height: 100%;
+}
+
+.main-desk-div.top-left-side-small-screen .main-desk-body-div .thumb-div .in-call-video-pause-img-div.active {
+  background: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 107px;
+  height: 79px;
+  border-radius: 5px;
+}
+
+.main-desk-div.top-left-side-small-screen .main-desk-body-div .thumb-div .in-call-video-pause-img-div.active .in-call-user-img-thumb {
+  border: 5px solid rgba(248, 149, 44, 0.27);
+  border-radius: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-desk-div.top-left-side-small-screen .main-desk-body-div .thumb-div .in-call-video-pause-img-div.active .in-call-user-img-thumb .img-responsive {
+  border-radius: 100%;
+  height: 46px;
+  width: 46px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 999px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.main-desk-div.top-left-side-small-screen .main-desk-body-div .thumb-div .in-call-video-pause-img-div.active .in-call-user-img-thumb.active-in .img-thumb {
+  border: 4px solid #8b5518;
+  border-radius: 999px;
+}
+
+.main-desk-div.top-left-side-small-screen .main-desk-body-div .thumb-div .in-call-video-pause-img-div.active .in-call-user-img-thumb.active-in .img-responsive {
+  border: 3px solid #f98d29;
+  border-radius: 999px;
+}
+
 .right-fixed-btn-div {
   z-index: 99;
   position: fixed;
@@ -68,6 +136,7 @@
     bottom: auto;
     top: 0;
     right: 0;
+    display: none;
   }
   .right-fixed-btn-div .btn.btn-secondary-show {
     font-size: 14px;
@@ -81,6 +150,25 @@
   }
   .incall-area-div.no-zoom {
     zoom: 100% !important;
+  }
+  .main-center-section .incall-area-section .tplf-share-screen-div.new-tplf-share-screen-div {
+    padding: 13px 40px 20px 47px;
+  }
+  .main-center-section .incall-area-section .tplf-share-screen-div.new-tplf-share-screen-div .in-call-user-ss-box .in-call-user-ss-img-thumb {
+    width: 107px;
+    height: 79px;
+    border: none;
+    border-radius: 5px;
+  }
+  .main-center-section .incall-area-section .tplf-share-screen-div.new-tplf-share-screen-div .in-call-user-ss-box .in-call-user-ss-img-thumb .img-responsive {
+    width: 107px;
+    height: 79px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 5px;
+  }
+  .main-desk-div .main-desk-top-div {
+    display: none;
   }
 }
 /*# sourceMappingURL=chat-incall-style.css.map */

@@ -659,13 +659,13 @@
     width: calc(100% + 40px);
 
     .root-participant-left-div {
-      width: calc(100% - 285px);
-      padding: 0 0 0 0;
+      width: calc(100% - 227px);
+      padding: 0 0 0 58px;
     }
 
     .root-participant-right-div {
-      width: 285px;
-      padding: 8px 22px 0 27px;
+      width: 227px;
+      padding: 10px 15px 0 18px;
     }
 
     .root-participant-inner-div {
@@ -712,15 +712,18 @@
 
     .main-desk-body-div {
       height: 132px;
+      border-radius: 5px;
 
       .thumb-div {
         .call-video-bg {
           height: 132px;
+          border-radius: 5px;
           object-position: top;
         }
 
         .img-responsive {
           height: 132px;
+          border-radius: 5px;
           object-position: top;
         }
       }
@@ -732,11 +735,11 @@
 
     .btn.btn-primary.btn-common-secondary {
       border-radius: 60px;
-      font-size: 15px;
+      font-size: 14px;
       line-height: 18px;
-      padding: 7px 40px 7px 40px;
+      padding: 7px 30px 7px 30px;
       min-width: 100%;
-      min-height: 41px;
+      min-height: 38px;
       width: 100%;
     }
   }
@@ -946,6 +949,27 @@
               }
             }
           }
+        }
+      }
+    }
+  }
+
+  .main-desk-div.top-left-side-small-screen {
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 13px 40px 20px 47px;
+    margin: 0;
+
+    .main-desk-body-div {
+      height: auto;
+
+      .thumb-div {
+        .img-responsive {
+          width: 107px;
+          height: 79px;
+          object-fit: cover;
+          border-radius: 5px;
         }
       }
     }
