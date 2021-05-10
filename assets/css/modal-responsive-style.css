@@ -151,9 +151,13 @@
     min-height: 100vh;
     margin: 0 auto;
   }
+  .modal-guest .modal-dialog .modal-content {
+    border-radius: 15px;
+  }
   .modal-guest .modal-dialog .modal-content .modal-header {
     min-height: 46px;
     max-height: 46px;
+    border-radius: 15px 15px 0 0;
   }
   .modal-guest .modal-dialog .modal-content .modal-header h5 {
     font-size: 18px;
@@ -285,6 +289,10 @@
   }
   .modal-guest .modal-dialog .modal-content .modal-footer .btn.btn-custom {
     font-size: 16px;
+    line-height: 22px;
+  }
+  .modal-guest .modal-dialog .modal-content .modal-footer.footer-leaving .btn.btn-custom {
+    font-size: 14px;
     line-height: 22px;
   }
   .modal-guest .modal-dialog .modal-content .footer-join {

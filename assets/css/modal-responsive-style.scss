@@ -246,9 +246,12 @@
       margin: 0 auto;
 
       .modal-content {
+        border-radius: 15px;
+
         .modal-header {
           min-height: 46px;
           max-height: 46px;
+          border-radius: 15px 15px 0 0;
 
           h5 {
             font-size: 18px;
@@ -425,6 +428,14 @@
           .btn.btn-custom {
             font-size: 16px;
             line-height: 22px;
+          }
+
+          //new design change
+          &.footer-leaving {
+            .btn.btn-custom {
+              font-size: 14px;
+              line-height: 22px;
+            }
           }
         }
 
