@@ -696,7 +696,8 @@
       height: calc(100vh - 109px);
 
       .card-body {
-        padding: 20px 0 0 0;
+        padding: 26px 0 0 0;
+        justify-content: flex-start;
 
         .card-body-row {
           .chat-item {
@@ -757,7 +758,6 @@
                 }
 
                 &::after {
-                  
                 }
 
                 .chat-text-inner {
@@ -771,17 +771,25 @@
       }
 
       .card-footer {
-        padding: 0 0 15px 0;
+        padding: 0 0 44px 0;
         border-radius: 0;
 
         .top-typying-div {
           .top-typying-row-div {
+            margin: 0 0 17px 0;
+
             .top-typying-left-div {
+              height: 41px;
+              width: 41px;
+
               .round-bx {
+                height: 41px;
+                width: 41px;
+
                 .dot {
                   height: 5px;
                   width: 5px;
-                  margin: 0 1px;
+                  margin: 0 2px;
 
                   &.dot2 {
                     transform: translateY(-8px);
@@ -791,8 +799,11 @@
             }
 
             .top-typying-right-div {
+              width: calc(100% - 41px);
+              padding: 0 0 0 13px;
+
               p {
-                font-size: 12px;
+                font-size: 15px;
               }
             }
           }
@@ -802,34 +813,37 @@
           .card-form {
             .left-file-div {
               label {
-                min-height: 58px;
-                padding: 0 10px 0 16px;
+                min-height: 70px;
+                padding: 0 10px 0 20px;
+
+                .paperclip-icon {
+                  width: 21px;
+                  height: 23px;
+                }
               }
             }
 
             textarea.form-control {
-              height: 58px;
-              font-size: 13px;
-              line-height: 18px;
-              padding: 21px 60px 12px 46px;
-              border-radius: 15px;
-              font-weight: 500;
+              height: 70px;
+              font-size: 16px;
+              line-height: 24px;
+              padding: 23px 60px 16px 62px;
+              border-radius: 20px;
             }
 
             .btn-file-div {
-              padding: 0 7px 0 0;
-              height: 58px;
+              padding: 0 10px 0 0;
+              height: 70px;
             }
 
             .btn.btn-primary {
-              width: 45px;
-              height: 45px;
-              border-radius: 10px;
+              width: 52px;
+              height: 52px;
               border: none;
 
               .send-button-icon {
-                width: 18px;
-                height: 18px;
+                width: 22px;
+                height: 20px;
               }
             }
           }

@@ -212,8 +212,7 @@ $(document).ready(function () {
   if (
     window.matchMedia("(min-width: 1025px) and (max-width: 1440px)").matches
   ) {
-    
-    // $("#chat-group-participant-area").addClass("mobile-landscape-chat-open");
+    $("#chat-group-participant-area").addClass("mobile-landscape-chat-open");
 
     $(".chat-btn-item-li").click(function () {
       $("#chat-group-participant-area").addClass("mobile-landscape-chat-open");
