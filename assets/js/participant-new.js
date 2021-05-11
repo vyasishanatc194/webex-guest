@@ -212,6 +212,9 @@ $(document).ready(function () {
   if (
     window.matchMedia("(min-width: 1025px) and (max-width: 1440px)").matches
   ) {
+    
+    $("#chat-group-participant-area").addClass("mobile-landscape-chat-open");
+
     $(".chat-btn-item-li").click(function () {
       $("#chat-group-participant-area").addClass("mobile-landscape-chat-open");
       $(".incall-area-div").addClass("no-zoom");
@@ -269,10 +272,6 @@ $(document).ready(function () {
       $(
         ".main-desk-div.top-left-side-small-screen #goto-presentor-view-area #goto-presentor-view-btn"
       ).text("Go to Participant View");
-
-      // $("#new-tplf-screen-div")
-      //   .removeClass("hidden-area")
-      //   .addClass("show-area");
     }
 
     $(
@@ -299,12 +298,6 @@ $(document).ready(function () {
         tabCloseParticipantScreen();
       });
     });
-
-    // if($(".main-desk-div #goto-presentor-view-area #goto-presentor-view-btn")) {
-    //   $("#goto-presentor-view-btn").click(function () {
-    //     tabCloseParticipantScreen();
-    //   });
-    // }
   }
 
   // onclick="location.href='chat.html';"
