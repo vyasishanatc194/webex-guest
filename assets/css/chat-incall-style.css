@@ -108,7 +108,42 @@
 
 @media (min-width: 1025px) and (max-width: 1450px) {
   .right-fixed-btn-div {
-    bottom: 110px;
+    bottom: auto;
+    top: 0;
+    right: 0;
+    display: none;
+  }
+  .right-fixed-btn-div .btn.btn-secondary-show {
+    font-size: 14px;
+    min-height: 44px;
+    border-radius: 0 0 0 12px;
+    border-top: 0;
+  }
+  .right-fixed-btn-div .btn.btn-secondary-show .show-participants-icon {
+    width: 15px;
+    height: 15px;
+  }
+  .incall-area-div.no-zoom {
+    zoom: 100% !important;
+  }
+  .main-center-section .incall-area-section .tplf-share-screen-div.new-tplf-share-screen-div {
+    padding: 13px 40px 20px 47px;
+  }
+  .main-center-section .incall-area-section .tplf-share-screen-div.new-tplf-share-screen-div .in-call-user-ss-box .in-call-user-ss-img-thumb {
+    width: 107px;
+    height: 79px;
+    border: none;
+    border-radius: 5px;
+  }
+  .main-center-section .incall-area-section .tplf-share-screen-div.new-tplf-share-screen-div .in-call-user-ss-box .in-call-user-ss-img-thumb .img-responsive {
+    width: 107px;
+    height: 79px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 5px;
+  }
+  .main-desk-div .main-desk-top-div {
+    display: none;
   }
 }
 

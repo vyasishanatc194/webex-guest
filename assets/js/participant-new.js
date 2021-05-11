@@ -209,11 +209,103 @@ $(document).ready(function () {
     });
   }
 
-  // onclick="location.href='chat.html';"
+  if (
+    window.matchMedia("(min-width: 1025px) and (max-width: 1440px)").matches
+  ) {
+    $(".chat-btn-item-li").click(function () {
+      $("#chat-group-participant-area").addClass("mobile-landscape-chat-open");
+      $(".incall-area-div").addClass("no-zoom");
 
-  // $("#minimize-screen-btn").click(function(){
-  //   if(!$("#main-small-screen-view-area.maximize-show-area.show-area.small-screen-area")){
-  //     console.log("minimize");
-  //   }
-  // });
+      $(".remove-chat-group-btn").click(function () {
+        $("#chat-group-participant-area").removeClass(
+          "mobile-landscape-chat-open"
+        );
+        $(".incall-area-div").removeClass("no-zoom");
+      });
+    });
+
+    /* Default screen */
+    $("#main-small-screen-view-area")
+      .addClass("show-area small-screen-area top-left-side-small-screen")
+      .removeClass("hidden-area");
+    $("#main-small-screen-view-area")
+      .parent()
+      .addClass("root-top-left-side-small-screen");
+    $("#main-small-screen-view-area #small-screen-image").attr(
+      "src",
+      "assets/images/user.jpg"
+    );
+    $(
+      ".main-desk-div.top-left-side-small-screen #goto-presentor-view-area #goto-presentor-view-btn"
+    ).text("Go to Participant View");
+
+    function tabCloseParticipantScreen() {
+      $("#main-big-screen-view-area .part-list-root-div")
+        .removeClass("show-area")
+        .addClass("hidden-area");
+      $("#goto-presentor-view-area")
+        .removeClass("show-area")
+        .addClass("hidden-area");
+
+      $("#chat-group-participant-area")
+        .removeClass("show-area")
+        .addClass("hidden-area");
+      $("#disabled-chat-btn").removeClass("disabled-btn");
+
+      $("#small-screen-image").removeClass("hidden-area").addClass("show-area");
+      $("#small-screen-video-div")
+        .removeClass("show-area")
+        .addClass("hidden-area");
+
+      $("#in-call-video-bg-fixed-div").removeClass("bg-color-hidden-video");
+      $("#in-call-video-bg-fixed-div .in-call-video-bg").removeClass(
+        "hidden-area"
+      );
+
+      $("#main-small-screen-view-area")
+        .addClass("top-left-side-small-screen")
+        .removeClass("hidden-area");
+
+      $(
+        ".main-desk-div.top-left-side-small-screen #goto-presentor-view-area #goto-presentor-view-btn"
+      ).text("Go to Participant View");
+
+      // $("#new-tplf-screen-div")
+      //   .removeClass("hidden-area")
+      //   .addClass("show-area");
+    }
+
+    $(
+      ".main-desk-div.top-left-side-small-screen #goto-presentor-view-area #goto-presentor-view-btn"
+    ).click(function () {
+      maximize_screen();
+      $("#main-small-screen-view-area")
+        .addClass("show-area small-screen-area")
+        .removeClass("hidden-area");
+      $("#show-participants-btn-area")
+        .addClass("hidden-area")
+        .removeClass("show-area");
+
+      $("#main-small-screen-view-area").removeClass(
+        "small-screen-area top-left-side-small-screen"
+      );
+      $(
+        ".main-desk-div #goto-presentor-view-area #goto-presentor-view-btn"
+      ).text("Go to Presentor View");
+
+      $(
+        ".main-desk-div #goto-presentor-view-area.show-area #goto-presentor-view-btn"
+      ).click(function () {
+        tabCloseParticipantScreen();
+      });
+    });
+
+    // if($(".main-desk-div #goto-presentor-view-area #goto-presentor-view-btn")) {
+    //   $("#goto-presentor-view-btn").click(function () {
+    //     tabCloseParticipantScreen();
+    //   });
+    // }
+  }
+
+  // onclick="location.href='chat.html';"
 });
