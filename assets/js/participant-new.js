@@ -212,7 +212,7 @@ $(document).ready(function () {
   if (
     window.matchMedia("(min-width: 1025px) and (max-width: 1440px)").matches
   ) {
-    $("#chat-group-participant-area").addClass("mobile-landscape-chat-open");
+    // $("#chat-group-participant-area").addClass("mobile-landscape-chat-open");
 
     $(".chat-btn-item-li").click(function () {
       $("#chat-group-participant-area").addClass("mobile-landscape-chat-open");
@@ -299,5 +299,9 @@ $(document).ready(function () {
     });
   }
 
-  // onclick="location.href='chat.html';"
+  // if (window.matchMedia("(min-width: 1025px) and (orientation: landscape)").matches) {
+  //   show_participants_btn();
+  //   maximize_screen();
+  //   maximize_screen_add_class();
+  // }
 });

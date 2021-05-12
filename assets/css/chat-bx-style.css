@@ -483,6 +483,97 @@
   display: none;
 }
 
+@media (min-width: 1025px) {
+  .chat-part-card-bx-div .chat-box .card-body .card-body-row::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  .part-list-root-div {
+    width: 100%;
+    height: 100%;
+    max-height: calc(100vh - 199px);
+    overflow-y: scroll;
+  }
+  .part-list-root-div::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+  .part-list-root-div::-webkit-scrollbar-track {
+    background-color: transparent;
+    border-radius: 50px;
+  }
+  .part-list-root-div::-webkit-scrollbar-thumb {
+    background-color: #d4d8e0;
+    border-radius: 50px;
+  }
+  .part-list-root-div .imggroup-fluid {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: top left;
+       object-position: top left;
+  }
+  .part-list-root-div.show-area {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+  }
+}
+
+@media (min-width: 1451px) {
+  .chat-part-card-bx-div .chat-box .card-body .card-body-row .chat-item .chat-file-inner {
+    min-height: 43px;
+    padding: 0 0 0 5px;
+  }
+  .chat-part-card-bx-div .chat-box .card-body .card-body-row .chat-item .chat-file-inner .chat-file-inner-row .file-icon-bx {
+    width: 43px;
+    height: 43px;
+    border-radius: 10px;
+  }
+  .chat-part-card-bx-div .chat-box .card-body .card-body-row .chat-item .chat-file-inner .chat-file-inner-row h4 {
+    font-size: 13px;
+  }
+  .chat-part-card-bx-div .chat-box .card-body .card-body-row .chat-item .chat-file-inner .chat-file-inner-row p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .chat-part-card-bx-div .chat-box .card-body .card-body-row .chat-item.chat-left .chat-text::before {
+    height: 57px;
+    width: 52px;
+    left: -8px;
+    background-size: contain;
+    bottom: -2px;
+  }
+  .chat-part-card-bx-div .chat-box .card-body .card-body-row .chat-item.chat-left .chat-text::after {
+    content: "";
+    min-height: inherit;
+    width: 60px;
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    background: #fff;
+    z-index: 0;
+  }
+  .chat-part-card-bx-div .chat-box .card-body .card-body-row .chat-item.chat-left .chat-text .chat-text-inner,
+  .chat-part-card-bx-div .chat-box .card-body .card-body-row .chat-item.chat-left .chat-text .chat-file-inner {
+    z-index: 1;
+  }
+  .chat-part-card-bx-div .chat-box .card-body .card-body-row .chat-item.chat-left .chat-text .chat-text {
+    border-radius: 18px 18px 18px 18px;
+  }
+  .chat-part-card-bx-div .chat-box .card-body .card-body-row .chat-item.chat-right .chat-text::before {
+    height: 57px;
+    right: -8px;
+    width: 52px;
+    background-size: contain;
+    bottom: -2px;
+  }
+  .chat-part-card-bx-div .chat-box .card-body .card-body-row .chat-row-new-join .nj-chat-details .nj-chat-user {
+    font-size: 12px;
+    padding: 0 0 0 10px;
+  }
+}
+
 @media (min-width: 1025px) and (max-width: 1450px) {
   .root-participant-div {
     padding: 0;
@@ -503,6 +594,7 @@
   }
   .root-participant-div .part-list-root-div {
     max-height: calc(100vh - 80px);
+    overflow-y: auto;
   }
   .in-call-video-bg-fixed-div.bg-color-hidden-video {
     background: #00142f;
@@ -682,6 +774,9 @@
     padding: 8px 0;
     margin: 0;
   }
+  .in-chat-mp-card-div.chat-part-card-bx-div .chat-box .card-body .card-body-row .chat-item .chat-file-inner {
+    padding: 3px 3px 0 0;
+  }
   .in-chat-mp-card-div.chat-part-card-bx-div .chat-box .card-body .card-body-row .chat-item .chat-details {
     padding: 0 0 0 10px;
   }
@@ -818,43 +913,6 @@
   .main-desk-div.top-left-side-small-screen .main-desk-btn-row-div {
     padding: 16px 0 0 0;
     display: block !important;
-  }
-}
-
-@media (min-width: 1025px) {
-  .chat-part-card-bx-div .chat-box .card-body .card-body-row::-webkit-scrollbar {
-    width: 6px;
-    height: 6px;
-  }
-  .part-list-root-div {
-    width: 100%;
-    height: 100%;
-    max-height: calc(100vh - 199px);
-    overflow-y: scroll;
-  }
-  .part-list-root-div::-webkit-scrollbar {
-    width: 8px;
-    height: 8px;
-  }
-  .part-list-root-div::-webkit-scrollbar-track {
-    background-color: transparent;
-    border-radius: 50px;
-  }
-  .part-list-root-div::-webkit-scrollbar-thumb {
-    background-color: #d4d8e0;
-    border-radius: 50px;
-  }
-  .part-list-root-div .imggroup-fluid {
-    width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-    -o-object-position: top left;
-       object-position: top left;
-  }
-  .part-list-root-div.show-area {
-    display: -webkit-box !important;
-    display: -ms-flexbox !important;
-    display: flex !important;
   }
 }
 
