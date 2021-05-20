@@ -142,6 +142,36 @@ $(document).ready(function () {
       "assets/images/user.jpg"
     );
 
+    $(
+      ".main-desk-div.top-left-side-small-screen #goto-presentor-view-area #goto-presentor-view-btn"
+    ).text("Go to Participant View");
+
+    $(".main-desk-div.top-left-side-small-screen #goto-presentor-view-area #goto-presentor-view-btn").click(function () {
+      maximize_screen();
+        $("#main-small-screen-view-area")
+          .addClass("show-area small-screen-area")
+          .removeClass("hidden-area");
+        $("#show-participants-btn-area")
+          .addClass("hidden-area")
+          .removeClass("show-area");
+
+        $("#main-small-screen-view-area").removeClass(
+          "small-screen-area top-left-side-small-screen"
+        );
+
+        $(
+          ".main-desk-div #goto-presentor-view-area #goto-presentor-view-btn"
+        ).text("Go to Presentor View");
+
+        $("#more-sm-check02-03").prop("checked", true);
+
+        // $("#new-tplf-screen-div").addClass("hidden-area").removeClass("show-area");
+
+        $("#goto-presentor-view-btn").click(function () {
+          mobileCloseParticipantScreen();
+        });
+    });
+
     function mobileCloseParticipantScreen() {
       $("#main-big-screen-view-area .part-list-root-div")
         .removeClass("show-area")
@@ -169,6 +199,10 @@ $(document).ready(function () {
         .addClass("top-left-side-small-screen")
         .removeClass("hidden-area");
 
+        $(
+          ".main-desk-div.top-left-side-small-screen #goto-presentor-view-area #goto-presentor-view-btn"
+        ).text("Go to Participant View");
+
       // $("#new-tplf-screen-div")
       //   .removeClass("hidden-area")
       //   .addClass("show-area");
@@ -192,6 +226,10 @@ $(document).ready(function () {
         $("#main-small-screen-view-area").removeClass(
           "small-screen-area top-left-side-small-screen"
         );
+
+        $(
+          ".main-desk-div #goto-presentor-view-area #goto-presentor-view-btn"
+        ).text("Go to Presentor View");
 
         // $("#new-tplf-screen-div").addClass("hidden-area").removeClass("show-area");
 

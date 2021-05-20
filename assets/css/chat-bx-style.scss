@@ -1786,18 +1786,36 @@
     top: 0;
     padding: 13px 40px 20px 47px;
     margin: 0;
+    max-width: 281px;
 
     .main-desk-body-div {
       height: auto;
 
       .thumb-div {
         .img-responsive {
-          width: 107px;
-          height: 79px;
+          width: 194px;
+          height: 100px;
+          object-fit: cover;
+          border-radius: 5px;
+        }
+
+        .call-video-bg {
+          width: 194px;
+          height: 100px;
           object-fit: cover;
           border-radius: 5px;
         }
       }
     }
+
+    .main-desk-btn-row-div {
+      padding: 8px 0 0 0;
+    }
+  }
+
+  // new design changes for landscape view
+  .main-desk-btn-row-div {
+    padding: 16px 0 0 0;
+    display: block !important;
   }
 }

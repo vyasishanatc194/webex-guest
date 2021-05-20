@@ -1541,16 +1541,31 @@
     top: 0;
     padding: 13px 40px 20px 47px;
     margin: 0;
+    max-width: 281px;
   }
   .main-desk-div.top-left-side-small-screen .main-desk-body-div {
     height: auto;
   }
   .main-desk-div.top-left-side-small-screen .main-desk-body-div .thumb-div .img-responsive {
-    width: 107px;
-    height: 79px;
+    width: 194px;
+    height: 100px;
     -o-object-fit: cover;
        object-fit: cover;
     border-radius: 5px;
+  }
+  .main-desk-div.top-left-side-small-screen .main-desk-body-div .thumb-div .call-video-bg {
+    width: 194px;
+    height: 100px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    border-radius: 5px;
+  }
+  .main-desk-div.top-left-side-small-screen .main-desk-btn-row-div {
+    padding: 8px 0 0 0;
+  }
+  .main-desk-btn-row-div {
+    padding: 16px 0 0 0;
+    display: block !important;
   }
 }
 /*# sourceMappingURL=chat-bx-style.css.map */
